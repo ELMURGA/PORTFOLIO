@@ -1,0 +1,173 @@
+/* ================================
+   ESTILOS COMUNES - Compartidos entre todas las páginas
+   ================================ */
+
+/* Custom styles to integrate Google Fonts with Tailwind */
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.font-archivo-black {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+#main-header {
+    transition: all 0.3s ease;
+}
+
+#main-header.scrolled {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    backdrop-filter: blur(10px);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* ================================
+   BOTÓN VOLVER ARRIBA
+   ================================ */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #ff7a2a 0%, #ff6a00 100%);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(255, 122, 42, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.scroll-to-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(255, 122, 42, 0.6);
+}
+
+.scroll-to-top-btn:active {
+    transform: translateY(-2px);
+}
+
+/* ================================
+   ANIMACIONES DE REVEAL
+   ================================ */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================================
+   ICONOS SOCIALES (Footer y páginas)
+   ================================ */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.footer-socials a,
+.social-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Iconos SVG de redes sociales */
+.social-icon-svg {
+    width: 48px;
+    height: 48px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease, filter 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon-svg:hover {
+    transform: translateY(-8px) scale(1.1);
+    color: #ff7a2a;
+    filter: drop-shadow(0 8px 16px rgba(255,122,42,0.6));
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+.contact-copyright {
+    margin-top: 3rem;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.site-footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 0;
+    background: #000;
+}
+
+/* ================================
+   ANIMACIONES GENERALES
+   ================================ */
+.swing-once {
+    animation: swing 0.9s ease-in-out 1;
+}
+
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(10deg); }
+    40% { transform: rotate(-8deg); }
+    60% { transform: rotate(6deg); }
+    80% { transform: rotate(-4deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Micro-animación del logo al click */
+.logo-tap {
+    animation: softBounce 420ms ease;
+}
+
+@keyframes softBounce {
+    0%   { transform: scale(1) translateY(0); }
+    30%  { transform: scale(1.06) translateY(-2px); }
+    60%  { transform: scale(1.03) translateY(-1px); }
+    100% { transform: scale(1) translateY(0); }
+}
+
+/* Resalte sutil del título de sección */
+.section-pop {
+    animation: sectionPop 360ms ease;
+}
+
+@keyframes sectionPop {
+    0%   { transform: translateY(0) scale(1); }
+    35%  { transform: translateY(-1px) scale(1.02); }
+    100% { transform: translateY(0) scale(1); }
+}

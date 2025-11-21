@@ -1,0 +1,276 @@
+/* ================================
+   ESTILOS ESPECÍFICOS DE CONTACTO.HTML
+   ================================ */
+
+/* ================================
+   FIX: Conflicto Bootstrap Collapse con Tailwind
+   IMPORTANTE: Tailwind y Bootstrap usan la misma clase .collapse
+   ================================ */
+#portfolioInfo.collapse:not(.show) {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+}
+
+#portfolioInfo.collapse.show {
+    display: block !important;
+    visibility: visible !important;
+    height: auto !important;
+}
+
+#portfolioInfo.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+    display: block !important;
+}
+
+/* ================================
+   VIDEO PRESENTACIÓN
+   ================================ */
+.video-presentation-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 20px 60px rgba(255, 122, 42, 0.3);
+}
+
+.video-custom {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.video-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-presentation-container:hover .video-controls {
+    opacity: 1;
+}
+
+.btn-video-control {
+    background: rgba(255, 122, 42, 0.9);
+    border: none;
+    color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.btn-video-control:hover {
+    background: #ff7a2a;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(255, 122, 42, 0.5);
+}
+
+.btn-video-control svg {
+    width: 24px;
+    height: 24px;
+}
+
+.video-progress-container {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-progress {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 0;
+}
+
+.video-progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #ff7a2a;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(255, 122, 42, 0.6);
+}
+
+.video-progress::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #ff7a2a;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 8px rgba(255, 122, 42, 0.6);
+}
+
+.video-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #ff7a2a 0%, #ff7a2a var(--progress, 0%), rgba(255, 255, 255, 0.2) var(--progress, 0%));
+    height: 6px;
+    border-radius: 3px;
+}
+
+.video-progress::-moz-range-track {
+    background: rgba(255, 255, 255, 0.2);
+    height: 6px;
+    border-radius: 3px;
+}
+
+.video-progress::-moz-range-progress {
+    background: #ff7a2a;
+    height: 6px;
+    border-radius: 3px;
+}
+
+.video-time {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    min-width: 100px;
+    text-align: center;
+}
+
+/* ================================
+   BOOTSTRAP CUSTOMIZATION
+   ================================ */
+.btn-gradient-orange {
+    background: linear-gradient(135deg, #ff7a2a 0%, #ff6a00 100%);
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 0.875rem 2rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 122, 42, 0.3);
+}
+
+.btn-gradient-orange:hover {
+    background: linear-gradient(135deg, #ff8a3a 0%, #ff7a10 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 122, 42, 0.5);
+    color: white;
+}
+
+.collapse {
+    transition: height 0.35s ease, opacity 0.35s ease;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+    opacity: 1;
+}
+
+.collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+}
+
+.card-custom-dark {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 122, 42, 0.2);
+    border-radius: 1rem;
+    color: white;
+}
+
+.card-custom-dark .card-body {
+    padding: 2rem;
+}
+
+.info-box {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border-left: 3px solid #ff7a2a;
+}
+
+.info-box ul li {
+    padding: 0.5rem 0;
+    color: #d0d0d0;
+}
+
+/* ================================
+   ICONOS DE CONTACTO
+   ================================ */
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #ff7a2a 0%, #ff6a00 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* ================================
+   FORMULARIO DE CONTACTO
+   ================================ */
+.contact-form-page input,
+.contact-form-page textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.contact-form-page input:focus,
+.contact-form-page textarea:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #ff7a2a;
+    box-shadow: 0 0 0 3px rgba(255, 122, 42, 0.1);
+}
+
+.contact-form-page input::placeholder,
+.contact-form-page textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* ================================
+   MENSAJES DE ESTADO DEL FORMULARIO
+   ================================ */
+#form-status.success {
+    display: block;
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    color: #22c55e;
+}
+
+#form-status.error {
+    display: block;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+}
