@@ -2,6 +2,12 @@
    ESTILOS COMUNES - Compartidos entre todas las páginas
    ================================ */
 
+/* Prevenir efecto rebote en iOS/macOS */
+html, body {
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+}
+
 /* Custom styles to integrate Google Fonts with Tailwind */
 body {
     font-family: 'Archivo', sans-serif;
@@ -185,15 +191,15 @@ body {
    FOOTER
    ================================ */
 .contact-copyright {
-    margin-top: 3rem;
-    color: #888;
-    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    color: #666;
+    font-size: 0.85rem;
 }
 
 .site-footer {
-    padding: 2rem 1rem;
+    padding: 1rem;
     text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.05);
     margin-top: 0;
     background: #000;
     position: relative;
