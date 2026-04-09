@@ -53,21 +53,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     
     // ================================
-    // MENÚ MÓVIL
+    // MENÚ MÓVIL — FIX: null checks para páginas sin #mobile-menu
     // ================================
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-    
-    // Cerrar menú cuando se hace clic en un enlace
-    mobileMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
-    });
+        
+        // Cerrar menú cuando se hace clic en un enlace
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    }
 
     // ================================
     // ANIMACIÓN FADE-IN AL HACER SCROLL
@@ -153,6 +155,23 @@ document.addEventListener('DOMContentLoaded', function () {
                         title.classList.add('section-pop');
                     }
                 }, 500);
+            });
+        });
+    });
+
+    // ================================
+    // BOTÓN COPIAR EMAIL (Footer)
+    // ================================
+    document.querySelectorAll('.footer-bar-copy[data-copy]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            navigator.clipboard.writeText(btn.dataset.copy).then(function () {
+                var original = btn.textContent;
+                btn.textContent = '✓ Copiado';
+                btn.classList.add('copied');
+                setTimeout(function () {
+                    btn.textContent = original;
+                    btn.classList.remove('copied');
+                }, 2000);
             });
         });
     });

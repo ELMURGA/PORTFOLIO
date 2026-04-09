@@ -214,62 +214,10 @@
     transform: translateX(4px);
 }
 
-/* Footer Socials ya está en style-common.css */
-
-.footer-socials {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem auto;
-}
-
-.social-link {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.social-icon-svg {
-    width: 48px;
-    height: 48px;
-    color: white;
-    transition: transform 0.3s ease, color 0.3s ease, filter 0.3s ease;
-    display: inline-block;
-}
-
-.social-icon-svg:hover {
-    transform: translateY(-8px) scale(1.1);
-    color: #ff7a2a;
-    filter: drop-shadow(0 8px 16px rgba(255,122,42,0.6));
-}
-
-.social-text {
-    font-size: 1rem;
-    color: #e5e7eb;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.certificate-card {
-    animation: fadeInUp 0.6s ease-out;
-    animation-fill-mode: both;
-}
-
-.certificate-card:nth-child(1) { animation-delay: 0.1s; }
-.certificate-card:nth-child(2) { animation-delay: 0.2s; }
-.certificate-card:nth-child(3) { animation-delay: 0.3s; }
-.certificate-card:nth-child(4) { animation-delay: 0.4s; }
-.certificate-card:nth-child(5) { animation-delay: 0.5s; }
-.certificate-card:nth-child(6) { animation-delay: 0.6s; }
+/* FIX: Eliminados bloques duplicados de style-common.css:
+   .footer-socials, .social-link, .social-icon-svg, .social-text,
+   .site-footer, .contact-copyright, .scroll-to-top-btn, .scroll-to-top-btn.show,
+   @keyframes fadeInUp, .certificate-card animation (ahora controlado por IntersectionObserver) */
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -295,58 +243,4 @@
         width: 48px;
         height: 48px;
     }
-
-    .social-icon-svg {
-        width: 32px;
-        height: 32px;
-    }
-}
-
-/* Site Footer */
-.site-footer {
-    background: #000;
-    padding: 2rem;
-    text-align: center;
-    border-top: 1px solid rgba(255, 122, 42, 0.1);
-}
-
-.contact-copyright {
-    color: #9ca3af;
-    font-size: 0.95rem;
-}
-
-/* Scroll to Top Button */
-.scroll-to-top-btn {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #ff7a2a, #ff6a00);
-    border: none;
-    border-radius: 50%;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(255, 122, 42, 0.4);
-    z-index: 1000;
-}
-
-.scroll-to-top-btn.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.scroll-to-top-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 30px rgba(255, 122, 42, 0.6);
-}
-
-.scroll-to-top-btn:active {
-    transform: translateY(-2px);
 }

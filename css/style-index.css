@@ -333,7 +333,9 @@
     font-weight: bold;
 }
 
-.project-modal-actions {
+/* FIX: añadido .project-modal-footer — el HTML usa esta clase, no .project-modal-actions */
+.project-modal-actions,
+.project-modal-footer {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;

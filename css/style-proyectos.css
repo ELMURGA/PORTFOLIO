@@ -213,16 +213,7 @@
 /* ================================
    ANIMACIONES
    ================================ */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* FIX: @keyframes fadeInUp movida a style-common.css — eliminada de aquí */
 
 .project-item {
     animation: fadeInUp 0.6s ease-out;
