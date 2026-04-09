@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             } catch (error) {
                 formStatus.className = 'error text-center p-4 rounded-lg';
-                formStatus.textContent = 'Hubo un error al enviar el mensaje. Por favor, intenta de nuevo o contáctame directamente por email.';
+                formStatus.textContent = 'Hubo un error al enviar el mensaje. Por favor, intenta de nuevo o contáctame directamente por email o whatsapp.';
             } finally {
                 submitButton.disabled = false;
                 submitButton.innerHTML = originalButtonText;

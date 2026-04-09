@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'Imagenes/proyectos/matalascanas.webp',
             description: 'Desarrollo completo de la identidad visual para el CD Atlético Matalascañas, un club deportivo que necesitaba renovar su imagen de marca.',
             details: `
-                <h4>🎯 Objetivo del Proyecto</h4>
+                <h4>Objetivo del Proyecto</h4>
                 <p>Crear una identidad visual moderna y profesional que refleje los valores del club y conecte con la comunidad local.</p>
                 
-                <h4>💡 Solución Creativa</h4>
+                <h4>Solución Creativa</h4>
                 <ul>
                     <li>Diseño de escudo emblemático con elementos representativos</li>
                     <li>Paleta de colores institucional coherente</li>
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Guía de uso de marca completa</li>
                 </ul>
                 
-                <h4>📊 Resultados</h4>
+                <h4>Resultados</h4>
                 <p>La nueva identidad ha sido adoptada con entusiasmo por la comunidad, fortaleciendo el sentido de pertenencia y profesionalizando la imagen del club.</p>
             `,
             hasWebsite: false
@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'Imagenes/proyectos/cartel.webp',
             description: 'Diseño de cartel promocional con estética minimalista y moderna para evento nocturno.',
             details: `
-                <h4>🎯 Concepto</h4>
+                <h4>Concepto</h4>
                 <p>Crear un diseño llamativo que capture la atención del público objetivo usando una paleta de colores limitada pero impactante.</p>
                 
-                <h4>💡 Características del Diseño</h4>
+                <h4>Características del Diseño</h4>
                 <ul>
                     <li>Estética minimalista con máximo impacto visual</li>
                     <li>Uso estratégico de negro y naranja</li>
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Formato optimizado para impresión A3</li>
                 </ul>
                 
-                <h4>✨ Aplicaciones</h4>
+                <h4>Aplicaciones</h4>
                 <p>Material impreso para publicidad urbana, versión digital para redes sociales y material promocional en diversos formatos.</p>
             `,
             hasWebsite: false
@@ -59,13 +59,13 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'Imagenes/proyectos/gyot.webp',
             description: 'Cartel publicitario para empresa de chapuzas con diseño creativo y llamativo.',
             details: `
-                <h4>🎯 Objetivo</h4>
+                <h4>Objetivo</h4>
                 <p>Crear un cartel publicitario llamativo y divertido para una empresa de chapuzas, utilizando personajes reconocibles que conecten con el público.</p>
                 
-                <h4>🎨 Concepto Creativo</h4>
+                <h4>Concepto Creativo</h4>
                 <p>Inspirado en los icónicos personajes "Pepe Gotera y Otilio", el diseño busca generar simpatía y confianza a través del humor y la nostalgia.</p>
                 
-                <h4>💡 Proceso de Diseño</h4>
+                <h4>Proceso de Diseño</h4>
                 <ul>
                     <li>Desarrollo conceptual basado en personajes clásicos</li>
                     <li>Composición visual atractiva y legible</li>
@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Diseño optimizado para impresión</li>
                 </ul>
                 
-                <h4>�️ Herramienta</h4>
+                <h4>Herramienta</h4>
                 <p>Diseñado completamente en Canva, aprovechando sus herramientas de diseño gráfico para crear un resultado profesional y efectivo.</p>
                 
-                <h4>✨ Aplicación</h4>
+                <h4>Aplicación</h4>
                 <p>Material publicitario para promoción de servicios de chapuzas y mantenimiento, ideal para carteles urbanos y redes sociales.</p>
             `,
             hasWebsite: false
@@ -88,13 +88,13 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'Imagenes/proyectos/dazenty.webp',
             description: 'Web de presentación para una agencia creativa que ofrece servicios de diseño gráfico, desarrollo web y branding con enfoque moderno y profesional.',
             details: `
-                <h4>📅 Año</h4>
-                <p>2024</p>
+                <h4>Año</h4>
+                <p>2026</p>
                 
-                <h4>🚀 Tecnologías</h4>
+                <h4>Tecnologías</h4>
                 <p>Next.js, React, CSS/Sass, Vercel</p>
                 
-                <h4>🎨 Rol</h4>
+                <h4>Rol</h4>
                 <ul>
                     <li>Identidad visual completa</li>
                     <li>Diseño de interfaz (UI)</li>
@@ -102,21 +102,22 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Desarrollo del layout principal</li>
                 </ul>
                 
-                <h4>📋 Descripción</h4>
+                <h4>Descripción</h4>
                 <p>Sitio de presentación para una agencia creativa orientada a servicios de diseño gráfico, desarrollo web y branding, con un enfoque moderno y profesional.</p>
                 
-                <h4>✨ Destacados</h4>
+                <h4>Destacados</h4>
                 <ul>
                     <li>Performance y despliegue en Vercel</li>
                     <li>UI limpia y visual</li>
                     <li>Estructura preparada para escalar portafolio</li>
                 </ul>
                 
-                <h4>📈 Resultado</h4>
+                <h4>Resultado</h4>
                 <p>Plataforma profesional para mostrar portafolio y captar clientes potenciales.</p>
             `,
             hasWebsite: true,
-            websiteUrl: 'https://dazenty.vercel.app'
+            websiteUrl: 'https://dazenty.com',
+            isWeb: true
         },
         'nextday': {
             title: 'Next Day - Flyer DJ Carlos Berlanga',
@@ -124,13 +125,13 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'Imagenes/proyectos/nextday.webp',
             description: 'Flyer promocional para el DJ Carlos Berlanga, diseñado para comunicar sus fechas de actuación.',
             details: `
-                <h4>� Cliente</h4>
+                <h4>Cliente</h4>
                 <p>DJ Carlos Berlanga - Artista y DJ profesional</p>
                 
-                <h4>🎯 Objetivo</h4>
+                <h4>Objetivo</h4>
                 <p>Crear un diseño llamativo y profesional que informe al público sobre los días y lugares donde el DJ actuará, generando expectativa y asistencia a sus eventos.</p>
                 
-                <h4>🎨 Proceso Creativo</h4>
+                <h4>Proceso Creativo</h4>
                 <ul>
                     <li>Diseño moderno y atractivo para el público objetivo</li>
                     <li>Tipografía impactante para destacar información clave</li>
@@ -139,10 +140,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Optimizado para compartir en redes sociales</li>
                 </ul>
                 
-                <h4>🛠️ Herramienta</h4>
+                <h4>Herramienta</h4>
                 <p>Diseñado completamente en Canva, aprovechando sus recursos para crear un resultado profesional y efectivo.</p>
                 
-                <h4>📱 Aplicaciones</h4>
+                <h4>Aplicaciones</h4>
                 <ul>
                     <li>Publicación en redes sociales</li>
                     <li>Stories de Instagram y Facebook</li>
@@ -150,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Difusión de eventos y fechas</li>
                 </ul>
                 
-                <h4>✨ Resultado</h4>
+                <h4>Resultado</h4>
                 <p>Flyer atractivo que comunica efectivamente las actuaciones del DJ y genera engagement con su audiencia.</p>
             `,
             hasWebsite: false
@@ -161,16 +162,16 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'Imagenes/proyectos/goalwear.webp',
             description: 'Diseño de logotipo para Goal Wear, empresa de venta de camisetas de fútbol en Utrera.',
             details: `
-                <h4>⚽ Empresa</h4>
+                <h4>Empresa</h4>
                 <p>Goal Wear - Tienda especializada en camisetas de fútbol</p>
                 
-                <h4>📍 Ubicación</h4>
+                <h4>Ubicación</h4>
                 <p>Utrera, Sevilla</p>
                 
-                <h4>🎯 Objetivo</h4>
+                <h4>Objetivo</h4>
                 <p>Crear una identidad visual que refleje la pasión por el fútbol y atraiga a los aficionados, transmitiendo profesionalidad y autenticidad en la venta de equipaciones deportivas.</p>
                 
-                <h4>💡 Concepto de Diseño</h4>
+                <h4>Concepto de Diseño</h4>
                 <ul>
                     <li>Logotipo deportivo y moderno</li>
                     <li>Elementos visuales relacionados con el fútbol</li>
@@ -179,13 +180,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Diseño versátil para diferentes aplicaciones</li>
                 </ul>
                 
-                <h4>🛠️ Herramienta</h4>
+                <h4>Herramienta</h4>
                 <p>Diseñado completamente en Canva con recursos optimizados para branding deportivo.</p>
                 
-                <h4>📱 Presencia Digital</h4>
+                <h4>Presencia Digital</h4>
                 <p><strong>Instagram:</strong> <a href="https://www.instagram.com/football_wear__utrera/" target="_blank" rel="noopener" style="color: #ff7a2a;">@football_wear__utrera</a></p>
                 
-                <h4>📋 Aplicaciones</h4>
+                <h4>Aplicaciones</h4>
                 <ul>
                     <li>Logo para redes sociales</li>
                     <li>Perfil de Instagram y Facebook</li>
@@ -194,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Etiquetas y packaging</li>
                 </ul>
                 
-                <h4>✨ Resultado</h4>
+                <h4>Resultado</h4>
                 <p>Identidad visual sólida que posiciona a Goal Wear como referente en la venta de camisetas de fútbol en Utrera.</p>
             `,
             hasWebsite: true,
@@ -207,13 +208,13 @@ document.addEventListener('DOMContentLoaded', function () {
             images: ['Imagenes/proyectos/clubgelves1.webp', 'Imagenes/proyectos/clubgelves2.webp'], // Múltiples imágenes
             description: 'Diseño de carnet de socio temporada 24-25 con tipografía protagonista y jerarquía clara para datos clave.',
             details: `
-                <h4>📅 Temporada</h4>
+                <h4>Temporada</h4>
                 <p>2024-2025</p>
                 
-                <h4>🎨 Enfoque de Diseño</h4>
+                <h4>Enfoque de Diseño</h4>
                 <p>Tipografía como elemento protagonista con jerarquía visual clara que facilita la lectura de datos importantes del socio.</p>
                 
-                <h4>💡 Características</h4>
+                <h4>Características</h4>
                 <ul>
                     <li>Diseño limpio y funcional</li>
                     <li>Jerarquía tipográfica optimizada</li>
@@ -222,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Formato estándar de carnet</li>
                 </ul>
                 
-                <h4>📋 Especificaciones Técnicas</h4>
+                <h4>Especificaciones Técnicas</h4>
                 <ul>
                     <li>Entregable listo para impresión</li>
                     <li>Formato profesional en alta resolución</li>
@@ -231,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Diseño de anverso y reverso coordinados</li>
                 </ul>
                 
-                <h4>🖼️ Imágenes del Proyecto</h4>
+                <h4>Imágenes del Proyecto</h4>
                 <p>A continuación se muestran el anverso y reverso del carnet de socio:</p>
             `,
             hasWebsite: false
@@ -242,17 +243,17 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'Imagenes/proyectos/costadelsol.webp',
             description: 'Diseño de logotipo para empresa de comercio mayorista localizada en Marbella, Málaga.',
             details: `
-                <h4>📍 Ubicación</h4>
+                <h4>Ubicación</h4>
                 <p>Marbella, Málaga - Costa del Sol</p>
                 
-                <h4>🏢 Sector de Actividad</h4>
+                <h4>Sector de Actividad</h4>
                 <p>Comercio al por mayor e intermediarios del comercio, excepto de vehículos de motor y motocicletas.</p>
                 <p><strong>Categoría específica:</strong> Comercio al por mayor, no especializado, de productos alimenticios, bebidas y tabaco (CNAE 4639).</p>
                 
-                <h4>🎨 Concepto de Diseño</h4>
+                <h4>Concepto de Diseño</h4>
                 <p>Logotipo que transmite profesionalidad y confianza, representando los valores de una empresa comercial establecida en la Costa del Sol.</p>
                 
-                <h4>💡 Características del Logo</h4>
+                <h4>Características del Logo</h4>
                 <ul>
                     <li>Diseño profesional y corporativo</li>
                     <li>Identidad visual clara y memorable</li>
@@ -261,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Colores que transmiten confianza empresarial</li>
                 </ul>
                 
-                <h4>📋 Aplicaciones</h4>
+                <h4>Aplicaciones</h4>
                 <ul>
                     <li>Papelería corporativa</li>
                     <li>Señalización comercial</li>
@@ -270,7 +271,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Documentación comercial</li>
                 </ul>
                 
-                <h4>✨ Resultado</h4>
+                <h4>Resultado</h4>
                 <p>Logotipo profesional que fortalece la identidad corporativa de la empresa y facilita su reconocimiento en el sector del comercio mayorista.</p>
             `,
             hasWebsite: false
@@ -278,17 +279,18 @@ document.addEventListener('DOMContentLoaded', function () {
         'sevillatp': {
             title: 'Sevilla Tarjetas Plásticas - Sitio Web Corporativo',
             category: 'web',
-            image: 'Imagenes/proyectos/sevillatp.webp',
+            image: 'Imagenes/proyectos/web_sevillatp.webp',
+            isWeb: true,
             tags: ['Desarrollo Web', 'Diseño Web', 'Branding', 'E-commerce'],
             description: 'Diseño y desarrollo web para empresa especializada en tarjetas plásticas PVC, impresión y rotulación en Sevilla.',
             details: `
-                <h4>🏢 Sobre el Cliente</h4>
+                <h4>Sobre el Cliente</h4>
                 <p><strong>Sevilla Tarjetas Plásticas</strong> es una empresa sevillana especializada en la fabricación y distribución de tarjetas plásticas PVC con diferentes tecnologías (códigos de barras, banda magnética, RFID, MIFARE), además de servicios de impresión en papel, lonas, vinilos, textil y rotulación.</p>
                 
-                <h4>🎯 Objetivo del Proyecto</h4>
+                <h4>Objetivo del Proyecto</h4>
                 <p>Crear una presencia online profesional que muestre todos los servicios de la empresa, facilite el contacto con clientes y permita solicitar presupuestos online, compensando la ausencia de oficina física de venta al público.</p>
                 
-                <h4>💼 Servicios Destacados</h4>
+                <h4>Servicios Destacados</h4>
                 <ul>
                     <li><strong>Tarjetas plásticas PVC</strong> - Producto estrella de la empresa</li>
                     <li>Tarjetas con tecnología RFID y MIFARE</li>
@@ -300,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Entregas express en 24-72 horas</li>
                 </ul>
                 
-                <h4>🎨 Características del Diseño Web</h4>
+                <h4>Características del Diseño Web</h4>
                 <ul>
                     <li>Diseño web responsive y profesional</li>
                     <li>Catálogo visual completo de productos y servicios</li>
@@ -311,14 +313,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Integración con redes sociales</li>
                 </ul>
                 
-                <h4>💡 Estrategia Digital</h4>
+                <h4>Estrategia Digital</h4>
                 <p>La web permite gestionar todos los pedidos a través de internet, ofreciendo precios competitivos al no tener gastos de oficina física, manteniendo la profesionalidad necesaria para el mercado B2B y B2C.</p>
                 
-                <h4>📍 Contacto</h4>
+                <h4>Contacto</h4>
                 <p>Plaza San Gabriel 2, 41009, Sevilla</p>
                 <p>📞 951.89.44.77 | 📱 699.14.63.37</p>
                 
-                <h4>🎯 Público Objetivo</h4>
+                <h4>Público Objetivo</h4>
                 <ul>
                     <li>Red de vendedores y distribuidores del gremio de impresión</li>
                     <li>Empresas con necesidades de tarjetas corporativas</li>
@@ -326,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Comercios que necesitan tarjetas regalo o fidelización</li>
                 </ul>
                 
-                <h4>✨ Resultados</h4>
+                <h4>Resultados</h4>
                 <p>Sitio web funcional que ha consolidado la presencia digital de la empresa, facilitando la captación de clientes y la gestión eficiente de pedidos con plazos de entrega desde 24 horas hasta 7-10 días laborables según necesidades.</p>
             `,
             websiteUrl: 'https://www.sevillatarjetasplasticas.com',
@@ -335,17 +337,18 @@ document.addEventListener('DOMContentLoaded', function () {
         'pinturasmerpa': {
             title: 'Pinturas Merpa - Sitio Web Corporativo',
             category: 'web',
-            image: 'Imagenes/proyectos/pinturasmerpa.webp',
+            image: 'Imagenes/proyectos/web_pinturasmerpa.webp',
+            isWeb: true,
             tags: ['Desarrollo Web', 'Diseño Web', 'Branding', 'En Desarrollo'],
             description: 'Diseño y desarrollo web para empresa de pinturas profesionales con catálogo de productos y servicios especializados.',
             details: `
-                <h4>🏢 Sobre el Cliente</h4>
+                <h4>Sobre el Cliente</h4>
                 <p><strong>Pinturas Merpa</strong> es una empresa especializada en la venta y distribución de pinturas profesionales para todo tipo de superficies y proyectos.</p>
                 
-                <h4>🎯 Objetivo del Proyecto</h4>
+                <h4>Objetivo del Proyecto</h4>
                 <p>Crear una presencia digital profesional que muestre el catálogo completo de productos, facilite la comunicación con clientes y posicione a la empresa como referente en el sector de pinturas.</p>
                 
-                <h4>🎨 Características del Diseño Web</h4>
+                <h4>Características del Diseño Web</h4>
                 <ul>
                     <li>Diseño web responsive y atractivo</li>
                     <li>Catálogo de productos organizado por categorías</li>
@@ -354,13 +357,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Formulario de contacto integrado</li>
                 </ul>
                 
-                <h4>🚀 Estado del Proyecto</h4>
+                <h4>Estado del Proyecto</h4>
                 <p><strong>En desarrollo</strong> - El sitio web está actualmente en fase de construcción, añadiendo nuevas funcionalidades y contenido.</p>
                 
-                <h4>💡 Tecnologías</h4>
+                <h4>Tecnologías</h4>
                 <p>HTML5, CSS3, JavaScript, diseño responsive</p>
                 
-                <h4>✨ Próximas Funcionalidades</h4>
+                <h4>Próximas Funcionalidades</h4>
                 <ul>
                     <li>Galería de proyectos realizados</li>
                     <li>Calculadora de cantidad de pintura</li>
@@ -378,13 +381,13 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['Desarrollo Web', 'Frontend', 'JavaScript', 'En Desarrollo'],
             description: 'Proyecto web interactivo con diseño moderno, animaciones fluidas y funcionalidades dinámicas.',
             details: `
-                <h4>🎯 Sobre el Proyecto</h4>
+                <h4>Sobre el Proyecto</h4>
                 <p><strong>Utrewal</strong> es un proyecto web experimental que explora las posibilidades del desarrollo frontend moderno con un enfoque en la experiencia de usuario.</p>
                 
-                <h4>💡 Concepto</h4>
+                <h4>Concepto</h4>
                 <p>Desarrollo de una aplicación web interactiva que combina diseño visual atractivo con funcionalidades dinámicas para crear una experiencia inmersiva.</p>
                 
-                <h4>🎨 Características del Diseño</h4>
+                <h4>Características del Diseño</h4>
                 <ul>
                     <li>Interfaz moderna y minimalista</li>
                     <li>Animaciones suaves y transiciones fluidas</li>
@@ -393,10 +396,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Tipografía legible y estética</li>
                 </ul>
                 
-                <h4>🚀 Estado del Proyecto</h4>
+                <h4>Estado del Proyecto</h4>
                 <p><strong>En desarrollo</strong> - El proyecto está en fase activa de desarrollo, implementando nuevas características y mejoras continuas.</p>
                 
-                <h4>💻 Tecnologías Utilizadas</h4>
+                <h4>Tecnologías Utilizadas</h4>
                 <ul>
                     <li>HTML5 semántico</li>
                     <li>CSS3 con animaciones avanzadas</li>
@@ -404,7 +407,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>GitHub Pages para el hosting</li>
                 </ul>
                 
-                <h4>✨ Próximas Mejoras</h4>
+                <h4>Próximas Mejoras</h4>
                 <ul>
                     <li>Optimización de rendimiento</li>
                     <li>Nuevas secciones de contenido</li>
@@ -413,7 +416,211 @@ document.addEventListener('DOMContentLoaded', function () {
                 </ul>
             `,
             websiteUrl: 'https://elmurga.github.io/VW/',
-            hasWebsite: true
+            hasWebsite: true,
+            isWeb: true
+        },
+
+        'hermanoshervas': {
+            title: 'Hermanos Hervás – Carpintería Artesanal',
+            tags: ['Diseño Web', 'Next.js', 'React', 'Branding'],
+            image: 'Imagenes/proyectos/web_hermanoshervas.webp',
+            isWeb: true,
+            description: 'Web corporativa para una empresa familiar de carpintería artesanal, con catálogo de trabajos y formulario de contacto.',
+            details: `
+                <h4>Año</h4>
+                <p>2026</p>
+
+                <h4>Tecnologías</h4>
+                <p>Next.js, React, CSS/Sass, Vercel</p>
+
+                <h4>Rol</h4>
+                <ul>
+                    <li>Diseño de interfaz (UI/UX)</li>
+                    <li>Desarrollo frontend completo</li>
+                    <li>Identidad visual adaptada al negocio</li>
+                </ul>
+
+                <h4>Descripción</h4>
+                <p>Web corporativa para una empresa familiar de carpintería artesanal, mostrando su catálogo de trabajos y facilitando el contacto con clientes.</p>
+
+                <h4>Destacados</h4>
+                <ul>
+                    <li>Diseño cálido y profesional</li>
+                    <li>Galería de proyectos realizados</li>
+                    <li>Formulario de contacto integrado</li>
+                </ul>
+            `,
+            hasWebsite: true,
+            websiteUrl: 'https://hermanos-hervas.vercel.app/'
+        },
+
+        'costadelsolfoods': {
+            title: 'Costa del Sol Foods & Beverages – Web Internacional',
+            tags: ['Diseño Web', 'Next.js', 'React', 'Exportación'],
+            image: 'Imagenes/proyectos/web_costadelsol.webp',
+            isWeb: true,
+            description: 'Plataforma web internacional para empresa exportadora de productos alimenticios de la Costa del Sol.',
+            details: `
+                <h4>Año</h4>
+                <p>2026</p>
+
+                <h4>Tecnologías</h4>
+                <p>Next.js, React, CSS/Sass, Vercel</p>
+
+                <h4>Rol</h4>
+                <ul>
+                    <li>Diseño y desarrollo web completo</li>
+                    <li>Versión multiidioma</li>
+                    <li>Catálogo de productos</li>
+                </ul>
+
+                <h4>Descripción</h4>
+                <p>Web internacional para empresa exportadora de productos alimenticios y bebidas típicas de la Costa del Sol, orientada a mercados exteriores.</p>
+
+                <h4>Destacados</h4>
+                <ul>
+                    <li>Diseño orientado a mercados internacionales</li>
+                    <li>Catálogo visual de productos</li>
+                    <li>Formulario de contacto B2B</li>
+                </ul>
+            `,
+            hasWebsite: true,
+            websiteUrl: 'https://costa-del-sol-foods-beverages-int.vercel.app/'
+        },
+
+        'jcautos': {
+            title: 'JOCARS – Concesionario de Vehículos',
+            tags: ['Diseño Web', 'Next.js', 'React', 'Automoción'],
+            image: 'Imagenes/proyectos/web_jcautos.webp',
+            isWeb: true,
+            description: 'Web para concesionario de vehículos de ocasión con catálogo, filtros de búsqueda y formulario de contacto.',
+            details: `
+                <h4>Año</h4>
+                <p>2026</p>
+
+                <h4>Tecnologías</h4>
+                <p>Next.js, React, CSS/Sass, Vercel</p>
+
+                <h4>Rol</h4>
+                <ul>
+                    <li>Diseño de interfaz completa</li>
+                    <li>Catálogo de vehículos con filtros</li>
+                    <li>Desarrollo frontend</li>
+                </ul>
+
+                <h4>Descripción</h4>
+                <p>Plataforma web para concesionario de vehículos de ocasión, con catálogo dinámico, filtros por precio y categoría, y formulario de contacto directo.</p>
+
+                <h4>Destacados</h4>
+                <ul>
+                    <li>Catálogo interactivo de vehículos</li>
+                    <li>Diseño limpio orientado a conversión</li>
+                    <li>Integración de formulario de contacto</li>
+                </ul>
+            `,
+            hasWebsite: true,
+            websiteUrl: 'https://www.jocarautomoviles.com'
+        },
+
+        'davidvillalba': {
+            title: 'David Villalba – Portfolio Personal',
+            tags: ['Diseño Web', 'Next.js', 'React', 'Portfolio'],
+            image: 'Imagenes/proyectos/web_davidvillalba.webp',
+            isWeb: true,
+            description: 'Portfolio personal para David Villalba, diseñado para mostrar su trabajo y habilidades de forma visual y profesional.',
+            details: `
+                <h4>Año</h4>
+                <p>2026</p>
+
+                <h4>Tecnologías</h4>
+                <p>Next.js, React, CSS/Sass, Vercel</p>
+
+                <h4>Rol</h4>
+                <ul>
+                    <li>Diseño y desarrollo completo</li>
+                    <li>Identidad visual personalizada</li>
+                    <li>Animaciones y transiciones</li>
+                </ul>
+
+                <h4>Descripción</h4>
+                <p>Portfolio profesional desarrollado a medida para presentar proyectos, habilidades y experiencia de David Villalba de forma visual e impactante.</p>
+
+                <h4>Destacados</h4>
+                <ul>
+                    <li>Diseño visual e impactante</li>
+                    <li>Animaciones fluidas</li>
+                    <li>Optimizado para reclutadores y clientes</li>
+                </ul>
+            `,
+            hasWebsite: true,
+            websiteUrl: 'https://david-villalba.com'
+        },
+
+        'jandula': {
+            title: 'Jándula Moda Utrera – Tienda de Moda',
+            tags: ['Diseño Web', 'Next.js', 'React', 'E-commerce'],
+            image: 'Imagenes/proyectos/newweb-jandula.webp',
+            isWeb: true,
+            description: 'Web para tienda de moda local en Utrera, con catálogo de productos y colecciones de temporada.',
+            details: `
+                <h4>Año</h4>
+                <p>2026</p>
+
+                <h4>Tecnologías</h4>
+                <p>Next.js, React, CSS/Sass, Vercel</p>
+
+                <h4>Rol</h4>
+                <ul>
+                    <li>Diseño de identidad visual</li>
+                    <li>Desarrollo web completo</li>
+                    <li>Catálogo de colecciones</li>
+                </ul>
+
+                <h4>Descripción</h4>
+                <p>Sitio web para tienda de moda local en Utrera, con catálogo de colecciones, secciones de novedades y contacto directo con la tienda.</p>
+
+                <h4>Destacados</h4>
+                <ul>
+                    <li>Estética fashion y elegante</li>
+                    <li>Catálogo visual de colecciones</li>
+                    <li>Optimizado para móvil</li>
+                </ul>
+            `,
+            hasWebsite: true,
+            websiteUrl: 'https://jandulamodautrera.es'
+        },
+
+        'pavistatto': {
+            title: 'Pavis Tattoo – Estudio de Tatuajes',
+            tags: ['Diseño Web', 'Next.js', 'React', 'Tatuaje'],
+            image: 'Imagenes/proyectos/web_pavistatto.webp',
+            isWeb: true,
+            description: 'Web para estudio de tatuajes con galería de trabajos, información del artista y formulario de cita previa.',
+            details: `
+                <h4>Año</h4>
+                <p>2025</p>
+
+                <h4>Tecnologías</h4>
+                <p>Next.js, React, CSS/Sass, Vercel</p>
+
+                <h4>Rol</h4>
+                <ul>
+                    <li>Diseño visual oscuro y artístico</li>
+                    <li>Galería de trabajos</li>
+                    <li>Desarrollo frontend completo</li>
+                </ul>
+
+                <h4>Descripción</h4>
+                <p>Sitio web para estudio de tatuajes con galería de trabajos realizados, presentación del artista y formulario de solicitud de cita previa.</p>
+
+                <h4>Destacados</h4>
+                <ul>
+                    <li>Diseño oscuro y artístico</li>
+                    <li>Galería visual de tatuajes</li>
+                    <li>Sistema de cita previa</li>
+                </ul>
+            `,
+            hasWebsite: false
         }
     };
 
@@ -454,6 +661,13 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('modal-project-title').textContent = project.title;
         document.getElementById('modal-project-description').textContent = project.description;
         
+        // Aplicar clase is-web para proyectos de captura de pantalla web
+        const modalBody = document.querySelector('.project-modal-body');
+        if (modalBody) {
+            if (project.isWeb) { modalBody.classList.add('is-web'); }
+            else { modalBody.classList.remove('is-web'); }
+        }
+
         // Manejar múltiples imágenes o una sola
         const imageContainer = document.querySelector('.project-modal-image');
         if (project.images && project.images.length > 1) {
