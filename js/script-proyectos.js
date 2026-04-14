@@ -62,13 +62,56 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
     // ================================
+    // MODAL DE PROYECTO
+    // ================================
+    const modal = document.getElementById('project-modal');
+    const modalImage = document.getElementById('modal-project-image');
+    const modalTitle = document.getElementById('modal-project-title');
+    const modalDescription = document.getElementById('modal-project-description');
+    const modalTags = document.getElementById('modal-project-tags');
+    const modalClose = document.querySelector('.project-modal-close');
+    const modalOverlay = document.querySelector('.project-modal-overlay');
+
+    function openModal(article) {
+        const img = article.querySelector('.project-img-gallery');
+        const title = article.querySelector('.project-title-gallery');
+        const desc = article.querySelector('.project-desc-gallery');
+        const tags = article.querySelectorAll('.tag-gallery');
+
+        modalImage.src = img ? img.src : '';
+        modalImage.alt = img ? img.alt : '';
+        modalTitle.textContent = title ? title.textContent : '';
+        modalDescription.textContent = desc ? desc.textContent : '';
+        modalTags.innerHTML = Array.from(tags).map(t => `<span class="tag-gallery">${t.textContent}</span>`).join('');
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+        setTimeout(() => { modalImage.src = ''; }, 300);
+    }
+
+    document.querySelectorAll('.view-project-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const article = this.closest('.project-item');
+            if (article) openModal(article);
+        });
+    });
+
+    if (modalClose) modalClose.addEventListener('click', closeModal);
+    if (modalOverlay) modalOverlay.addEventListener('click', closeModal);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    // ================================
     // CLICK EN PROYECTO (opcional: abrir en modal o nueva página)
     // ================================
     projectItems.forEach(item => {
         item.addEventListener('click', function() {
-            // Aquí puedes añadir funcionalidad adicional
-            // Por ejemplo, abrir un modal con más detalles del proyecto
-            console.log('Proyecto clickeado:', this.querySelector('.project-title-gallery').textContent);
+            openModal(this);
         });
     });
 
