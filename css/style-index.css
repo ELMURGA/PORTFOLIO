@@ -54,6 +54,12 @@
 /* ================================
    SWIPER PAGINATION (Clientes)
    ================================ */
+.client-swiper .swiper-slide img {
+    max-height: 140px;
+    width: auto;
+    object-fit: contain;
+}
+
 .swiper-pagination-bullet {
     background-color: #ffffff !important;
     opacity: 0.5;
