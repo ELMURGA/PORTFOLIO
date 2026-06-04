@@ -3,7 +3,7 @@
   
   # Portfolio - Alejandro Hernández Murga
   
-  ### 🎨 Diseñador Gráfico | 💻 Desarrollador Web
+  ### 💻 Frontend Developer
   
   [![Live Site](https://img.shields.io/badge/🌐_Live_Site-alejandro--murga.vercel.app-success?style=for-the-badge)](https://alejandro-murga.vercel.app)
   [![GitHub](https://img.shields.io/badge/GitHub-ELMURGA-181717?style=for-the-badge&logo=github)](https://github.com/ELMURGA/PORTFOLIO)
@@ -21,7 +21,7 @@
 
 ## 📋 Sobre el Proyecto
 
-Portfolio web profesional optimizado para rendimiento, que muestra proyectos de **diseño gráfico** y **desarrollo web**. Construido con tecnologías modernas y enfocado en experiencia de usuario, accesibilidad y velocidad de carga.
+Portfolio web profesional optimizado para rendimiento, que muestra proyectos de desarrollo web frontend. Construido con tecnologías modernas y enfocado en experiencia de usuario, accesibilidad y velocidad de carga.
 
 ### 🌟 Características Principales
 
@@ -91,7 +91,6 @@ PORTFOLIO/
 │   │   └── mio.webp                 # (LCP - Largest Contentful Paint)
 │   ├── proyectos/                   # Imágenes de proyectos
 │   │   ├── pinturasmerpa.webp       # Proyecto Pinturas Merpa
-│   │   ├── utrewal.webp             # Proyecto Utrewal
 │   │   └── ...                      # Otros proyectos
 │   ├── clientes/                    # Logos de clientes (carrusel)
 │   │   └── *.webp
@@ -189,8 +188,7 @@ El sitio está configurado para desplegarse automáticamente en **Vercel**:
   - Enlace al proyecto en vivo
   - Imágenes optimizadas en WebP
 - Proyectos incluidos:
-  - Pinturas Merpa (React + Vite)
-  - Utrewal - Volkswagen (HTML/CSS/JS)
+  - Pinturas Merpa (HTML/CSS/JS)
   - Y más...
 
 ### 📜 [Certificados](/pages/certificados.html)
@@ -204,7 +202,7 @@ El sitio está configurado para desplegarse automáticamente en **Vercel**:
 
 ### 🖼️ [Proyectos](/pages/proyectos.html)
 **Galería completa de trabajos**
-- Sistema de filtrado por categorías (Diseño Gráfico, Branding, Web, Packaging)
+- Sistema de filtrado por stack tecnológico (React / Next.js, HTML5 / CSS3 / Vanilla JS)
 - Grid responsivo con efectos hover
 - Modal de vista detallada con:
   - Descripción completa del proyecto
