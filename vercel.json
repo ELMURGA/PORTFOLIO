@@ -4,7 +4,7 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/(?!_vercel)(.*)",
       "headers": [
         {
           "key": "Cache-Control",
