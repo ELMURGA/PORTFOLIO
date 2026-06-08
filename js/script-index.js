@@ -147,11 +147,11 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         'hermanoshervas': {
-            title: 'Hermanos Hervás – Carpintería Artesanal',
-            tags: ['Next.js', 'React', 'Tailwind CSS'],
+            title: 'Hermanos Hervás – Restaurante & Eventos',
+            tags: ['Next.js', 'React', 'Sass', 'Vercel'],
             image: 'Imagenes/proyectos/web_hermanoshervas.webp',
             isWeb: true,
-            description: 'Web corporativa para una empresa familiar de carpintería artesanal, con catálogo de trabajos y formulario de contacto.',
+            description: 'Web corporativa para restaurante familiar con carta interactiva, salón de celebraciones y sistema de reservas online.',
             details: `
                 <h4>Año</h4>
                 <p>2026</p>
@@ -163,17 +163,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 <ul>
                     <li>Diseño de interfaz (UI/UX)</li>
                     <li>Desarrollo frontend completo</li>
-                    <li>Identidad visual adaptada al negocio</li>
+                    <li>Identidad visual y carta interactiva</li>
                 </ul>
 
                 <h4>Descripción</h4>
-                <p>Web corporativa para una empresa familiar de carpintería artesanal, mostrando su catálogo de trabajos y facilitando el contacto con clientes.</p>
+                <p>Sitio web para el Restaurante Hermanos Hervás 'La Pachanga' en Los Palacios y Villafranca, Sevilla. Presenta su cocina andaluza tradicional, especialidad en arroces, menú del día y salones para celebraciones.</p>
 
                 <h4>Destacados</h4>
                 <ul>
-                    <li>Diseño cálido y profesional</li>
-                    <li>Galería de proyectos realizados</li>
-                    <li>Formulario de contacto integrado</li>
+                    <li>Carta interactiva en línea</li>
+                    <li>Integración de reserva de mesa</li>
+                    <li>Diseño moderno y totalmente adaptado a móviles</li>
                 </ul>
             `,
             hasWebsite: true,
@@ -215,33 +215,33 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         'jocars': {
-            title: 'JOCARS – Concesionario de Vehículos',
+            title: 'JoCar Automóviles – Concesionario Premium',
             tags: ['HTML5', 'CSS3', 'JavaScript'],
             image: 'Imagenes/proyectos/web_jcautos.webp',
             isWeb: true,
-            description: 'Web para concesionario de vehículos de ocasión con catálogo, filtros de búsqueda y formulario de contacto.',
+            description: 'Web para concesionario de vehículos de ocasión premium con catálogo interactivo, filtros de búsqueda y tasación instantánea.',
             details: `
                 <h4>Año</h4>
                 <p>2026</p>
 
                 <h4>Tecnologías</h4>
-                <p>HTML5, CSS3, JavaScript</p>
+                <p>HTML5, CSS3, JavaScript, PHP/Sanity</p>
 
                 <h4>Rol</h4>
                 <ul>
-                    <li>Diseño de interfaz completa</li>
-                    <li>Catálogo de vehículos con filtros</li>
-                    <li>Desarrollo frontend</li>
+                    <li>Diseño de interfaz de usuario</li>
+                    <li>Catálogo de vehículos con filtros avanzados</li>
+                    <li>Integración de tasación exprés vía WhatsApp</li>
                 </ul>
 
                 <h4>Descripción</h4>
-                <p>Plataforma web para concesionario de vehículos de ocasión, con catálogo dinámico, filtros por precio y categoría, y formulario de contacto directo.</p>
+                <p>Plataforma para JoCar Automóviles en Utrera, Sevilla, ofreciendo vehículos de ocasión premium 100% revisados, con IVA deducible, garantía y financiación a medida.</p>
 
                 <h4>Destacados</h4>
                 <ul>
-                    <li>Catálogo interactivo de vehículos</li>
-                    <li>Diseño limpio orientado a conversión</li>
-                    <li>Integración de formulario de contacto</li>
+                    <li>Catálogo dinámico interactivo con filtros por precio y categoría</li>
+                    <li>Diseño premium oscuro alineado con coches de alta gama</li>
+                    <li>Enlaces directos a tasación y soporte instantáneo</li>
                 </ul>
             `,
             hasWebsite: true,
@@ -363,6 +363,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalOverlay = modal.querySelector('.project-modal-overlay');
     const modalClose = modal.querySelector('.project-modal-close');
     const viewProjectBtns = document.querySelectorAll('.view-project-btn');
+    let _modalScrollY = 0;
 
     // Detectar si estamos en la página de proyectos
     const isProyectosPage = window.location.pathname.includes('proyectos.html');
@@ -439,6 +440,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Mostrar modal
+        _modalScrollY = window.scrollY;
+        document.body.style.position = 'fixed';
+        document.body.style.top = '-' + _modalScrollY + 'px';
+        document.body.style.width = '100%';
         document.body.style.overflow = 'hidden';
         modal.classList.add('active');
     }
@@ -446,7 +451,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Función para cerrar modal
     function closeModal() {
         modal.classList.remove('active');
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
         document.body.style.overflow = '';
+        window.scrollTo(0, _modalScrollY);
     }
 
     // Event listeners para todos los botones de "Ver Proyecto"

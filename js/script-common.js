@@ -57,16 +57,39 @@ document.addEventListener('DOMContentLoaded', function () {
     // ================================
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    let _menuScrollY = 0;
     
     if (menuBtn && mobileMenu) {
+        function openMenu() {
+            mobileMenu.classList.remove('hidden');
+            _menuScrollY = window.scrollY;
+            document.body.style.position = 'fixed';
+            document.body.style.top = '-' + _menuScrollY + 'px';
+            document.body.style.width = '100%';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.add('hidden');
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.width = '';
+            document.body.style.overflow = '';
+            window.scrollTo(0, _menuScrollY);
+        }
+
         menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                openMenu();
+            } else {
+                closeMenu();
+            }
         });
         
         // Cerrar menú cuando se hace clic en un enlace
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+                closeMenu();
             });
         });
     }

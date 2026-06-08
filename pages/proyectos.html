@@ -6,8 +6,9 @@
     <title>Proyectos - Alejandro Hernández Murga</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../Imagenes/logo/logo.webp">
-    <link rel="apple-touch-icon" href="../Imagenes/logo/logo.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Imagenes/logo/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../Imagenes/logo/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="../Imagenes/logo/favicon-512.png">
     
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -114,191 +115,304 @@
     <main class="container mx-auto px-6 py-12">
         
         <!-- Hero Section -->
-        <section class="text-center my-12 md:my-24 reveal">
-            <h1 class="text-5xl md:text-7xl font-archivo-black leading-tight mb-6">Mi Portfolio</h1>
-            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">Una colección de mis proyectos de desarrollo de aplicaciones web y frontend. Cada proyecto refleja mi enfoque en el rendimiento, la accesibilidad y la experiencia de usuario.</p>
-        </section>
+        <div class="hero-section-wrapper">
+            <div class="hero-grid-bg"></div>
+            <section class="text-center my-12 md:my-24 reveal relative z-10">
+                <h1 class="text-5xl md:text-7xl font-archivo-black leading-tight mb-6">
+                    <span class="neon-gradient-text">Mi Portfolio</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">Una colección de mis proyectos de desarrollo de aplicaciones web y frontend. Cada proyecto refleja mi enfoque en el rendimiento, la accesibilidad y la experiencia de usuario.</p>
+            </section>
+        </div>
 
         <!-- Filter Buttons -->
         <section class="filter-section my-12 reveal">
-            <div class="flex flex-wrap justify-center gap-4">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="react">React / Next.js</button>
-                <button class="filter-btn" data-filter="vanilla">HTML5 / CSS3 / Vanilla JS</button>
+            <div class="filter-capsule">
+                <button class="filter-capsule-btn filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-capsule-btn filter-btn" data-filter="react">React / Next.js</button>
+                <button class="filter-capsule-btn filter-btn" data-filter="vanilla">HTML5 / CSS3 / Vanilla JS</button>
             </div>
         </section>
 
         <!-- Projects Gallery -->
         <section class="my-16 reveal">
-            <div class="projects-gallery">
+            <div class="projects-grid-container">
                 
                 <!-- Proyecto Nuevo: Hermanos Hervás -->
                 <article class="project-item" data-category="react" data-project="hermanoshervas">
-                    <div class="project-image-wrapper">
-                        <img src="../Imagenes/proyectos/web_hermanoshervas.webp" alt="Hermanos Hervás – Carpintería Artesanal" loading="lazy" class="project-img-gallery"/>
-                        <div class="project-overlay-gallery">
-                            <div class="project-info-gallery">
-                                <h3 class="project-title-gallery">Hermanos Hervás</h3>
-                                <div class="project-tags-gallery">
-                                    <span class="tag-gallery">Next.js</span>
-                                    <span class="tag-gallery">React</span>
-                                    <span class="tag-gallery">Sass</span>
-                                </div>
-                                <p class="project-desc-gallery">Web corporativa para carpintería artesanal familiar con catálogo interactivo y formulario de contacto.</p>
-                                <button class="view-project-btn" data-project="hermanoshervas">Ver Proyecto</button>
+                    <div class="portfolio-card">
+                        <div class="card-overlay-glow"></div>
+                        <div class="browser-header">
+                            <span class="browser-dot dot-red"></span>
+                            <span class="browser-dot dot-yellow"></span>
+                            <span class="browser-dot dot-green"></span>
+                            <span class="browser-address">hermanos-hervas.app</span>
+                        </div>
+                        <div class="card-thumbnail-wrapper">
+                            <img src="../Imagenes/proyectos/web_hermanoshervas.webp" alt="Hermanos Hervás" loading="lazy" class="card-thumbnail"/>
+                        </div>
+                        <div class="card-info-pane">
+                            <div class="card-tag-pills">
+                                <span class="card-tag">Next.js</span>
+                                <span class="card-tag">React</span>
+                                <span class="card-tag">Sass</span>
                             </div>
+                            <h3 class="card-title">Hermanos Hervás</h3>
+                            <p class="card-desc">Web corporativa para restaurante familiar con carta interactiva, salón de celebraciones y sistema de reservas online.</p>
+                            <button class="view-project-btn card-action-btn" data-project="hermanoshervas">
+                                Ver detalles
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </article>
 
                 <!-- Proyecto Nuevo: Costa del Sol Foods -->
                 <article class="project-item" data-category="vanilla" data-project="costadelsolfoods">
-                    <div class="project-image-wrapper">
-                        <img src="../Imagenes/proyectos/web_costadelsol.webp" alt="Costa del Sol Foods & Beverages – Web B2B Internacional" loading="lazy" class="project-img-gallery"/>
-                        <div class="project-overlay-gallery">
-                            <div class="project-info-gallery">
-                                <h3 class="project-title-gallery">Costa del Sol Foods</h3>
-                                <div class="project-tags-gallery">
-                                    <span class="tag-gallery">HTML5</span>
-                                    <span class="tag-gallery">CSS3</span>
-                                    <span class="tag-gallery">JavaScript</span>
-                                </div>
-                                <p class="project-desc-gallery">Plataforma web B2B internacional para exportación de productos alimenticios con catálogo de productos.</p>
-                                <button class="view-project-btn" data-project="costadelsolfoods">Ver Proyecto</button>
+                    <div class="portfolio-card">
+                        <div class="card-overlay-glow"></div>
+                        <div class="browser-header">
+                            <span class="browser-dot dot-red"></span>
+                            <span class="browser-dot dot-yellow"></span>
+                            <span class="browser-dot dot-green"></span>
+                            <span class="browser-address">costadelsolfoods.com</span>
+                        </div>
+                        <div class="card-thumbnail-wrapper">
+                            <img src="../Imagenes/proyectos/web_costadelsol.webp" alt="Costa del Sol Foods" loading="lazy" class="card-thumbnail"/>
+                        </div>
+                        <div class="card-info-pane">
+                            <div class="card-tag-pills">
+                                <span class="card-tag">HTML5</span>
+                                <span class="card-tag">CSS3</span>
+                                <span class="card-tag">JavaScript</span>
                             </div>
+                            <h3 class="card-title">Costa del Sol Foods</h3>
+                            <p class="card-desc">Plataforma web B2B internacional para exportación de productos alimenticios con catálogo de productos.</p>
+                            <button class="view-project-btn card-action-btn" data-project="costadelsolfoods">
+                                Ver detalles
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </article>
 
-                <!-- Proyecto Nuevo: JOCARS AUTOMOVILES -->
+                <!-- Proyecto Nuevo: JoCar Automóviles -->
                 <article class="project-item" data-category="vanilla" data-project="jocars">
-                    <div class="project-image-wrapper">
-                        <img src="../Imagenes/proyectos/web_jcautos.webp" alt="JOCARS AUTOMOVILES – Catálogo de Vehículos" loading="lazy" class="project-img-gallery"/>
-                        <div class="project-overlay-gallery">
-                            <div class="project-info-gallery">
-                                <h3 class="project-title-gallery">JOCARS</h3>
-                                <div class="project-tags-gallery">
-                                    <span class="tag-gallery">HTML5</span>
-                                    <span class="tag-gallery">CSS3</span>
-                                    <span class="tag-gallery">JavaScript</span>
-                                </div>
-                                <p class="project-desc-gallery">Concesionario de vehículos de ocasión con catálogo interactivo, filtros de búsqueda y formulario de contacto.</p>
-                                <button class="view-project-btn" data-project="jocars">Ver Proyecto</button>
+                    <div class="portfolio-card">
+                        <div class="card-overlay-glow"></div>
+                        <div class="browser-header">
+                            <span class="browser-dot dot-red"></span>
+                            <span class="browser-dot dot-yellow"></span>
+                            <span class="browser-dot dot-green"></span>
+                            <span class="browser-address">jocarautomoviles.com</span>
+                        </div>
+                        <div class="card-thumbnail-wrapper">
+                            <img src="../Imagenes/proyectos/web_jcautos.webp" alt="JoCar Automóviles" loading="lazy" class="card-thumbnail"/>
+                        </div>
+                        <div class="card-info-pane">
+                            <div class="card-tag-pills">
+                                <span class="card-tag">HTML5</span>
+                                <span class="card-tag">CSS3</span>
+                                <span class="card-tag">JavaScript</span>
                             </div>
+                            <h3 class="card-title">JoCar Automóviles</h3>
+                            <p class="card-desc">Web para concesionario de vehículos premium de ocasión con catálogo interactivo, filtros de búsqueda y tasación instantánea.</p>
+                            <button class="view-project-btn card-action-btn" data-project="jocars">
+                                Ver detalles
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </article>
 
                 <!-- Proyecto Nuevo: David Villalba -->
                 <article class="project-item" data-category="vanilla" data-project="davidvillalba">
-                    <div class="project-image-wrapper">
-                        <img src="../Imagenes/proyectos/web_davidvillalba.webp" alt="David Villalba – Portfolio Personal" loading="lazy" class="project-img-gallery"/>
-                        <div class="project-overlay-gallery">
-                            <div class="project-info-gallery">
-                                <h3 class="project-title-gallery">David Villalba</h3>
-                                <div class="project-tags-gallery">
-                                    <span class="tag-gallery">HTML5</span>
-                                    <span class="tag-gallery">CSS3</span>
-                                    <span class="tag-gallery">JavaScript</span>
-                                </div>
-                                <p class="project-desc-gallery">Portfolio personal diseñado para mostrar proyectos y habilidades de manera visual e interactiva.</p>
-                                <button class="view-project-btn" data-project="davidvillalba">Ver Proyecto</button>
+                    <div class="portfolio-card">
+                        <div class="card-overlay-glow"></div>
+                        <div class="browser-header">
+                            <span class="browser-dot dot-red"></span>
+                            <span class="browser-dot dot-yellow"></span>
+                            <span class="browser-dot dot-green"></span>
+                            <span class="browser-address">davidvillalba.dev</span>
+                        </div>
+                        <div class="card-thumbnail-wrapper">
+                            <img src="../Imagenes/proyectos/web_davidvillalba.webp" alt="David Villalba" loading="lazy" class="card-thumbnail"/>
+                        </div>
+                        <div class="card-info-pane">
+                            <div class="card-tag-pills">
+                                <span class="card-tag">HTML5</span>
+                                <span class="card-tag">CSS3</span>
+                                <span class="card-tag">JavaScript</span>
                             </div>
+                            <h3 class="card-title">David Villalba</h3>
+                            <p class="card-desc">Portfolio personal diseñado para mostrar proyectos y habilidades de manera visual e interactiva.</p>
+                            <button class="view-project-btn card-action-btn" data-project="davidvillalba">
+                                Ver detalles
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </article>
 
-                <!-- Proyecto Nuevo: Jándula -->
+                <!-- Proyecto Nuevo: Jándula Moda -->
                 <article class="project-item" data-category="react" data-project="jandula">
-                    <div class="project-image-wrapper">
-                        <img src="../Imagenes/proyectos/newweb-jandula.webp" alt="Jándula – Tienda Moda Femenina" loading="lazy" class="project-img-gallery"/>
-                        <div class="project-overlay-gallery">
-                            <div class="project-info-gallery">
-                                <h3 class="project-title-gallery">Jándula</h3>
-                                <div class="project-tags-gallery">
-                                    <span class="tag-gallery">Next.js</span>
-                                    <span class="tag-gallery">React</span>
-                                    <span class="tag-gallery">E-commerce</span>
-                                </div>
-                                <p class="project-desc-gallery">Sitio web para tienda de moda en Utrera con catálogo de colecciones y diseño optimizado para móviles.</p>
-                                <button class="view-project-btn" data-project="jandula">Ver Proyecto</button>
+                    <div class="portfolio-card">
+                        <div class="card-overlay-glow"></div>
+                        <div class="browser-header">
+                            <span class="browser-dot dot-red"></span>
+                            <span class="browser-dot dot-yellow"></span>
+                            <span class="browser-dot dot-green"></span>
+                            <span class="browser-address">jandulamoda.es</span>
+                        </div>
+                        <div class="card-thumbnail-wrapper">
+                            <img src="../Imagenes/proyectos/newweb-jandula.webp" alt="Jándula Moda" loading="lazy" class="card-thumbnail"/>
+                        </div>
+                        <div class="card-info-pane">
+                            <div class="card-tag-pills">
+                                <span class="card-tag">Next.js</span>
+                                <span class="card-tag">React</span>
+                                <span class="card-tag">E-commerce</span>
                             </div>
+                            <h3 class="card-title">Jándula Moda</h3>
+                            <p class="card-desc">Sitio web para tienda de moda en Utrera con catálogo de colecciones y diseño optimizado para móviles.</p>
+                            <button class="view-project-btn card-action-btn" data-project="jandula">
+                                Ver detalles
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </article>
 
-                <!-- Proyecto Nuevo: Pavis Tatto -->
+                <!-- Proyecto Nuevo: Pavis Tattoo -->
                 <article class="project-item" data-category="react" data-project="pavistatto">
-                    <div class="project-image-wrapper">
-                        <img src="../Imagenes/proyectos/web_pavistatto.webp" alt="Pavis Tattoo – Estudio de Tatuajes" loading="lazy" class="project-img-gallery"/>
-                        <div class="project-overlay-gallery">
-                            <div class="project-info-gallery">
-                                <h3 class="project-title-gallery">Pavis Tattoo</h3>
-                                <div class="project-tags-gallery">
-                                    <span class="tag-gallery">Next.js</span>
-                                    <span class="tag-gallery">React</span>
-                                    <span class="tag-gallery">Sass</span>
-                                </div>
-                                <p class="project-desc-gallery">Sitio web para estudio de tatuajes con galería visual de trabajos realizados y cita previa.</p>
-                                <button class="view-project-btn" data-project="pavistatto">Ver Proyecto</button>
+                    <div class="portfolio-card">
+                        <div class="card-overlay-glow"></div>
+                        <div class="browser-header">
+                            <span class="browser-dot dot-red"></span>
+                            <span class="browser-dot dot-yellow"></span>
+                            <span class="browser-dot dot-green"></span>
+                            <span class="browser-address">pavistattoo.art</span>
+                        </div>
+                        <div class="card-thumbnail-wrapper">
+                            <img src="../Imagenes/proyectos/web_pavistatto.webp" alt="Pavis Tattoo" loading="lazy" class="card-thumbnail"/>
+                        </div>
+                        <div class="card-info-pane">
+                            <div class="card-tag-pills">
+                                <span class="card-tag">Next.js</span>
+                                <span class="card-tag">React</span>
+                                <span class="card-tag">Sass</span>
                             </div>
+                            <h3 class="card-title">Pavis Tattoo</h3>
+                            <p class="card-desc">Sitio web para estudio de tatuajes con galería visual de trabajos realizados y cita previa.</p>
+                            <button class="view-project-btn card-action-btn" data-project="pavistatto">
+                                Ver detalles
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </article>
 
                 <!-- Proyecto: Dazenty -->
                 <article class="project-item" data-category="react" data-project="dazenty">
-                    <div class="project-image-wrapper">
-                        <img src="../Imagenes/proyectos/dazenty.webp" alt="Dazenty – Agencia Web" loading="lazy" class="project-img-gallery" width="2940" height="14176"/>
-                        <div class="project-overlay-gallery">
-                            <div class="project-info-gallery">
-                                <h3 class="project-title-gallery">Dazenty</h3>
-                                <div class="project-tags-gallery">
-                                    <span class="tag-gallery">Next.js</span>
-                                    <span class="tag-gallery">React</span>
-                                    <span class="tag-gallery">Vercel</span>
-                                </div>
-                                <p class="project-desc-gallery">Sitio web corporativo de agencia de desarrollo frontend con un diseño limpio y moderno.</p>
-                                <button class="view-project-btn" data-project="dazenty">Ver Proyecto</button>
+                    <div class="portfolio-card">
+                        <div class="card-overlay-glow"></div>
+                        <div class="browser-header">
+                            <span class="browser-dot dot-red"></span>
+                            <span class="browser-dot dot-yellow"></span>
+                            <span class="browser-dot dot-green"></span>
+                            <span class="browser-address">dazenty.com</span>
+                        </div>
+                        <div class="card-thumbnail-wrapper">
+                            <img src="../Imagenes/proyectos/dazenty.webp" alt="Dazenty – Agencia Web" loading="lazy" class="card-thumbnail"/>
+                        </div>
+                        <div class="card-info-pane">
+                            <div class="card-tag-pills">
+                                <span class="card-tag">Next.js</span>
+                                <span class="card-tag">React</span>
+                                <span class="card-tag">Vercel</span>
                             </div>
+                            <h3 class="card-title">Dazenty</h3>
+                            <p class="card-desc">Sitio web corporativo de agencia de desarrollo frontend con un diseño limpio y moderno.</p>
+                            <button class="view-project-btn card-action-btn" data-project="dazenty">
+                                Ver detalles
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </article>
 
                 <!-- Proyecto: Sevilla Tarjetas Plásticas -->
                 <article class="project-item" data-category="vanilla" data-project="sevillatp">
-                    <div class="project-image-wrapper">
-                        <img src="../Imagenes/proyectos/web_sevillatp.webp" alt="Sevilla Tarjetas Plásticas" loading="lazy" class="project-img-gallery"/>
-                        <div class="project-overlay-gallery">
-                            <div class="project-info-gallery">
-                                <h3 class="project-title-gallery">Sevilla Tarjetas Plásticas</h3>
-                                <div class="project-tags-gallery">
-                                    <span class="tag-gallery">HTML5</span>
-                                    <span class="tag-gallery">CSS3</span>
-                                    <span class="tag-gallery">JavaScript</span>
-                                </div>
-                                <p class="project-desc-gallery">Sitio web corporativo y de presupuestos para fabricante de tarjetas de PVC e impresión comercial.</p>
-                                <button class="view-project-btn" data-project="sevillatp">Ver Proyecto</button>
+                    <div class="portfolio-card">
+                        <div class="card-overlay-glow"></div>
+                        <div class="browser-header">
+                            <span class="browser-dot dot-red"></span>
+                            <span class="browser-dot dot-yellow"></span>
+                            <span class="browser-dot dot-green"></span>
+                            <span class="browser-address">sevillatarjetasplasticas.com</span>
+                        </div>
+                        <div class="card-thumbnail-wrapper">
+                            <img src="../Imagenes/proyectos/web_sevillatp.webp" alt="Sevilla Tarjetas Plásticas" loading="lazy" class="card-thumbnail"/>
+                        </div>
+                        <div class="card-info-pane">
+                            <div class="card-tag-pills">
+                                <span class="card-tag">HTML5</span>
+                                <span class="card-tag">CSS3</span>
+                                <span class="card-tag">JavaScript</span>
                             </div>
+                            <h3 class="card-title">Sevilla Tarjetas Plásticas</h3>
+                            <p class="card-desc">Sitio web corporativo y de presupuestos para fabricante de tarjetas de PVC e impresión comercial.</p>
+                            <button class="view-project-btn card-action-btn" data-project="sevillatp">
+                                Ver detalles
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </article>
 
                 <!-- Proyecto: Pinturas Merpa -->
                 <article class="project-item" data-category="vanilla" data-project="pinturasmerpa">
-                    <div class="project-image-wrapper">
-                        <img src="../Imagenes/proyectos/web_pinturasmerpa.webp" alt="Pinturas Merpa" loading="lazy" class="project-img-gallery"/>
-                        <div class="project-overlay-gallery">
-                            <div class="project-info-gallery">
-                                <h3 class="project-title-gallery">Pinturas Merpa</h3>
-                                <div class="project-tags-gallery">
-                                    <span class="tag-gallery">HTML5</span>
-                                    <span class="tag-gallery">CSS3</span>
-                                    <span class="tag-gallery">JavaScript</span>
-                                </div>
-                                <p class="project-desc-gallery">Diseño y desarrollo web para distribuidor de pinturas profesionales con catálogo estructurado.</p>
-                                <button class="view-project-btn" data-project="pinturasmerpa">Ver Proyecto</button>
+                    <div class="portfolio-card">
+                        <div class="card-overlay-glow"></div>
+                        <div class="browser-header">
+                            <span class="browser-dot dot-red"></span>
+                            <span class="browser-dot dot-yellow"></span>
+                            <span class="browser-dot dot-green"></span>
+                            <span class="browser-address">pinturasmerpa.es</span>
+                        </div>
+                        <div class="card-thumbnail-wrapper">
+                            <img src="../Imagenes/proyectos/web_pinturasmerpa.webp" alt="Pinturas Merpa" loading="lazy" class="card-thumbnail"/>
+                        </div>
+                        <div class="card-info-pane">
+                            <div class="card-tag-pills">
+                                <span class="card-tag">HTML5</span>
+                                <span class="card-tag">CSS3</span>
+                                <span class="card-tag">JavaScript</span>
                             </div>
+                            <h3 class="card-title">Pinturas Merpa</h3>
+                            <p class="card-desc">Diseño y desarrollo web para distribuidor de pinturas profesionales con catálogo estructurado.</p>
+                            <button class="view-project-btn card-action-btn" data-project="pinturasmerpa">
+                                Ver detalles
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </article>
