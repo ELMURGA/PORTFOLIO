@@ -53,18 +53,18 @@ body {
 }
 
 #main-header.shrink .logo img {
-    height: 5rem;
+    height: 3.25rem;
 }
 
 @media (min-width: 768px) {
     #main-header.shrink .logo img {
-        height: 7rem;
+        height: 3.75rem;
     }
 }
 
 @media (min-width: 1024px) {
     #main-header.shrink .logo img {
-        height: 9rem;
+        height: 4.25rem;
     }
 }
 

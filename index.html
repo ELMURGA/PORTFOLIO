@@ -25,7 +25,7 @@
     <link rel="apple-touch-icon" sizes="512x512" href="Imagenes/logo/favicon-512.png">
 
     <!-- Preload LCP image - CRITICAL -->
-    <link rel="preload" as="image" href="Imagenes/personal/mio.webp" fetchpriority="high" type="image/webp">
+    <link rel="preload" as="image" href="Imagenes/personal/mio.webp?v=20261009-final" fetchpriority="high" type="image/webp">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,19 +57,19 @@
         }
 
         header {
-            padding: 1.5rem;
+            padding: 0.75rem 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 50;
-            background: rgba(0, 0, 0, .8);
-            backdrop-filter: blur(4px)
+            background: rgba(0, 0, 0, .85);
+            backdrop-filter: blur(8px)
         }
 
         .logo img {
-            height: 7rem;
+            height: 3.5rem;
             object-fit: contain
         }
 
@@ -80,7 +80,7 @@
         }
 
         section {
-            margin: 3rem 0
+            margin: 2.5rem 0
         }
 
         .flex {
@@ -114,7 +114,7 @@
 
         @media(min-width:768px) {
             .logo img {
-                height: 10rem
+                height: 4.25rem
             }
 
             .md\:w-1\/2 {
@@ -128,7 +128,7 @@
 
         @media(min-width:1024px) {
             .logo img {
-                height: 14rem
+                height: 4.75rem
             }
         }
 
@@ -159,8 +159,8 @@
     </noscript>
 
     <!-- Custom CSS Files -->
-    <link rel="stylesheet" href="css/style-common.css?v=20260414">
-    <link rel="stylesheet" href="css/style-index.css?v=20260414">
+    <link rel="stylesheet" href="css/style-common.css?v=20261009-final">
+    <link rel="stylesheet" href="css/style-index.css?v=20261009-final">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -186,11 +186,11 @@
 
     <!-- HEADER -->
     <header id="main-header"
-        class="p-6 md:p-8 flex justify-between items-center sticky top-0 z-50 bg-black bg-opacity-95 backdrop-blur-sm transition-all duration-300">
+        class="py-3 px-6 md:px-8 flex justify-between items-center sticky top-0 z-50 bg-black bg-opacity-95 backdrop-blur-sm transition-all duration-300">
         <div class="logo">
             <a href="#">
                 <img src="Imagenes/logo/logo.webp" alt="Logo Alejandro Hernández Murga"
-                    class="h-28 md:h-40 lg:h-56 object-contain">
+                    class="h-14 md:h-16 lg:h-20 object-contain">
             </a>
         </div>
         <nav class="hidden md:flex items-center space-x-8">
@@ -237,17 +237,17 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    <main class="container mx-auto px-6 py-12">
+    <main class="container mx-auto px-6 pt-2 md:pt-4 pb-12">
 
         <!-- Hero Section -->
-        <section class="flex flex-col md:flex-row items-center gap-10 md:gap-14 my-10 md:my-20 reveal">
-            <div class="w-full md:w-5/12 lg:w-1/2">
+        <section class="hero-section flex flex-col md:flex-row items-center justify-between gap-8 md:gap-14 reveal">
+            <div class="w-full md:w-5/12 lg:w-5/12 flex justify-center md:justify-start">
                 <div class="hero-image-wrapper">
-                    <img src="Imagenes/personal/mio.webp" alt="Alejandro Hernández Murga — Full Stack Developer"
-                        class="w-full h-auto object-cover rounded-2xl" width="3041" height="4055" fetchpriority="high">
+                    <img src="Imagenes/personal/mio.webp?v=20261009-final" alt="Alejandro Hernández Murga — Full Stack Developer"
+                        class="w-full h-auto object-cover rounded-2xl" width="2120" height="2775" fetchpriority="high">
                 </div>
             </div>
-            <div class="w-full md:w-7/12 lg:w-1/2 flex flex-col justify-center">
+            <div class="w-full md:w-7/12 lg:w-7/12 flex flex-col justify-center">
                 <h1 class="hero-title">
                     Alejandro Hernández Murga
                 </h1>
@@ -906,8 +906,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
     <!-- Custom JavaScript Files -->
-    <script src="js/script-common.js?v=20260414" defer></script>
-    <script src="js/script-index.js?v=20260414" defer></script>
+    <script src="js/script-common.js?v=20261009-final" defer></script>
+    <script src="js/script-index.js?v=20261009-final" defer></script>
 </body>
 
 </html>
