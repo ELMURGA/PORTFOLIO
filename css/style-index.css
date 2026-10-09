@@ -3,6 +3,183 @@
    ================================ */
 
 /* ================================
+   HERO SECTION
+   ================================ */
+.hero-image-wrapper {
+    position: relative;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-image-wrapper:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+}
+
+.hero-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.hero-image-wrapper:hover img {
+    transform: scale(1.02);
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.45rem 1.1rem;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    border-radius: 9999px;
+    color: #34d399;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.25rem;
+    width: fit-content;
+}
+
+.hero-badge-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #10b981;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #10b981;
+    animation: pulseDot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulseDot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.hero-title {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(2.2rem, 4.8vw, 3.85rem);
+    line-height: 1.08;
+    color: #ffffff;
+    margin-bottom: 0.85rem;
+    letter-spacing: -0.02em;
+}
+
+.hero-role {
+    font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+    font-weight: 700;
+    color: #ff7a2a;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.hero-role-sep {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.hero-role-sub {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.hero-desc {
+    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 1.5rem;
+    max-width: 36rem;
+}
+
+.hero-tech-stack {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0;
+}
+
+.hero-tech-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 9999px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #ffffff;
+    transition: all 0.25s ease;
+}
+
+.hero-tech-tag:hover {
+    background: rgba(255, 122, 42, 0.12);
+    border-color: rgba(255, 122, 42, 0.4);
+    color: #ff7a2a;
+}
+
+.hero-tech-sep {
+    color: #ff7a2a;
+    font-weight: 700;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.9rem 2.2rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+}
+
+.hero-btn-primary {
+    background: linear-gradient(135deg, #ff7a2a 0%, #ff6a00 100%);
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(255, 122, 42, 0.35);
+}
+
+.hero-btn-primary:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 14px 35px rgba(255, 122, 42, 0.55);
+    color: #ffffff;
+}
+
+.hero-btn-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+.hero-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px) scale(1.02);
+    color: #ffffff;
+}
+
+
+
+/* ================================
    SECCIÓN SOBRE MÍ
    ================================ */
 .about-me-section {

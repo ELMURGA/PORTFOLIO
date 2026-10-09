@@ -11,40 +11,144 @@ document.addEventListener('DOMContentLoaded', function () {
     const projectsData = {
         'dazenty': {
             title: 'Dazenty – Agencia de Desarrollo Web',
-            tags: ['Next.js', 'React', 'Sass', 'Vercel'],
+            tags: ['Next.js', 'React', 'Sass', 'n8n', 'Vercel'],
             image: 'Imagenes/proyectos/dazenty.webp',
-            description: 'Web corporativa para agencia de desarrollo web especializada en frontend, con enfoque moderno y profesional.',
+            description: 'Agencia especializada en diseño y desarrollo web, automatizaciones con n8n, branding y marketing digital.',
             details: `
                 <h4>Año</h4>
                 <p>2026</p>
                 
                 <h4>Tecnologías</h4>
-                <p>Next.js, React, CSS/Sass, Vercel</p>
+                <p>Next.js, React, CSS/Sass, Vercel, n8n</p>
                 
                 <h4>Rol</h4>
                 <ul>
-                    <li>Diseño de interfaz (UI)</li>
-                    <li>Desarrollo frontend completo</li>
-                    <li>Tipografías y esquema de color</li>
+                    <li>Fundador y desarrollo web principal</li>
+                    <li>Diseño de interfaces UI/UX</li>
+                    <li>Automatizaciones e integraciones con n8n</li>
                     <li>Despliegue y optimización en Vercel</li>
                 </ul>
                 
                 <h4>Descripción</h4>
-                <p>Sitio web corporativo para agencia de desarrollo web, orientado a captar clientes y mostrar portafolio de proyectos con un enfoque moderno y profesional.</p>
+                <p>Sitio web corporativo para Dazenty. Especialistas en diseño y desarrollo web de alto impacto, automatizaciones con n8n y creación de experiencias que conectan y venden.</p>
                 
                 <h4>Destacados</h4>
                 <ul>
-                    <li>Performance y despliegue en Vercel</li>
-                    <li>UI limpia y visual</li>
-                    <li>Estructura preparada para escalar portafolio</li>
+                    <li>Performance ultrarrápido y despliegue en Vercel</li>
+                    <li>UI oscura, moderna y tecnológica</li>
+                    <li>Estructura preparada para escalar portafolio de clientes</li>
                 </ul>
                 
                 <h4>Resultado</h4>
-                <p>Plataforma profesional para mostrar portafolio y captar clientes potenciales.</p>
+                <p>Plataforma profesional para mostrar portafolio, captar clientes y liderar proyectos digitales en toda España.</p>
             `,
             hasWebsite: true,
             websiteUrl: 'https://dazenty.com',
             isWeb: true
+        },
+
+        'andalcar': {
+            title: 'Andalcar – Alquiler de Coches en Conil y Andalucía',
+            tags: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'Vercel'],
+            image: 'Imagenes/proyectos/web_andalcar.webp',
+            isWeb: true,
+            description: 'Plataforma web de reservas para empresa de alquiler de vehículos en Conil de la Frontera, Cádiz y aeropuertos de Andalucía.',
+            details: `
+                <h4>Año</h4>
+                <p>2026</p>
+
+                <h4>Tecnologías</h4>
+                <p>HTML5, CSS3, JavaScript, Tailwind CSS, Vercel</p>
+
+                <h4>Rol</h4>
+                <ul>
+                    <li>Diseño UI/UX completo y adaptado a conversión</li>
+                    <li>Desarrollo frontend responsive y accesible</li>
+                    <li>Integración de catálogo de flota, tarifas y reservas online</li>
+                    <li>Canal de atención directa por WhatsApp</li>
+                </ul>
+
+                <h4>Descripción</h4>
+                <p>Sitio web para Andalcar, referente en alquiler de vehículos en Conil de la Frontera, Cádiz, Jerez, Tarifa y aeropuertos de Sevilla y Málaga. Tarifas claras, sin franquicia oculta, cancelación gratuita y flota moderna.</p>
+
+                <h4>Destacados</h4>
+                <ul>
+                    <li>Presentación visual de flota y cálculo de ofertas</li>
+                    <li>Diseño optimizado para velocidad y reservas en móvil</li>
+                    <li>Arquitectura limpia y despliegue continuo en Vercel</li>
+                </ul>
+            `,
+            hasWebsite: true,
+            websiteUrl: 'https://andalcar.vercel.app'
+        },
+
+        'ysidoro': {
+            title: 'Librería Papelería Isidoro | iPapel',
+            tags: ['JavaScript', 'HTML5', 'CSS3', 'E-commerce', 'Vercel'],
+            image: 'Imagenes/proyectos/web_ysidoro.webp',
+            isWeb: true,
+            description: 'Plataforma digital para papelería y librería técnica con buscador de libros de texto y material por colegios.',
+            details: `
+                <h4>Año</h4>
+                <p>2026</p>
+
+                <h4>Tecnologías</h4>
+                <p>JavaScript, HTML5, CSS3, E-commerce, Vercel</p>
+
+                <h4>Rol</h4>
+                <ul>
+                    <li>Diseño de interfaz y experiencia de usuario para comercio electrónico</li>
+                    <li>Desarrollo frontend del buscador escolar interactivo</li>
+                    <li>Estructuración de categorías y catálogo de productos</li>
+                </ul>
+
+                <h4>Descripción</h4>
+                <p>Portal web para Librería Papelería Isidoro (iPapel.es). Diseñado para simplificar la campaña de Vuelta al Cole y la adquisición de material escolar, libros de texto por centro educativo, papelería y tecnología con un diseño intuitivo.</p>
+
+                <h4>Destacados</h4>
+                <ul>
+                    <li>Buscador especializado de libros y materiales por colegio y curso</li>
+                    <li>Diseño limpio con microinteracciones y acceso rápido a carrito</li>
+                    <li>Optimización mobile-first para familias y docentes</li>
+                </ul>
+            `,
+            hasWebsite: true,
+            websiteUrl: 'https://ysidoro.vercel.app'
+        },
+
+        'quirimba': {
+            title: 'Quirimba – Moda & Tendencias Femeninas',
+            tags: ['HTML5', 'CSS3', 'JavaScript', 'Fashion', 'Vercel'],
+            image: 'Imagenes/proyectos/web_quirimba.webp',
+            isWeb: true,
+            description: 'Web y catálogo digital para tienda de moda femenina y complementos con identidad visual contemporánea en Utrera.',
+            details: `
+                <h4>Año</h4>
+                <p>2026</p>
+
+                <h4>Tecnologías</h4>
+                <p>HTML5, CSS3, JavaScript, Vercel</p>
+
+                <h4>Rol</h4>
+                <ul>
+                    <li>Diseño visual editorial y elegante alineado a la marca</li>
+                    <li>Desarrollo frontend responsive</li>
+                    <li>Catálogo de prendas, vestidos y colecciones de temporada</li>
+                    <li>Integración de canal de venta rápida por WhatsApp</li>
+                </ul>
+
+                <h4>Descripción</h4>
+                <p>Sitio web para Quirimba en Utrera (Sevilla). Moda femenina con carácter, colecciones exclusivas y presencia digital cuidada para potenciar ventas locales y envíos a toda España.</p>
+
+                <h4>Destacados</h4>
+                <ul>
+                    <li>Diseño visual cálido y minimalista estilo lookbook</li>
+                    <li>Experiencia de navegación fluida en smartphones</li>
+                    <li>Rápida tasa de carga y despliegue en Vercel</li>
+                </ul>
+            `,
+            hasWebsite: true,
+            websiteUrl: 'https://quirimba.vercel.app'
         },
 
         'sevillatp': {

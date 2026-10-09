@@ -1,257 +1,209 @@
 <div align="center">
-  <img src="Imagenes/logo/logo.webp" alt="Logo Alejandro Hernández Murga" width="200">
+  <img src="Imagenes/logo/logo.webp" alt="Logo Alejandro Hernández Murga" width="180">
   
-  # Portfolio - Alejandro Hernández Murga
+  # Alejandro Hernández Murga — Portfolio
+
+  ### ⚡ Full Stack Developer · Frontend Specialist
   
-  ### 💻 Frontend Developer
-  
-  [![Live Site](https://img.shields.io/badge/🌐_Live_Site-alejandro--murga.vercel.app-success?style=for-the-badge)](https://alejandro-murga.vercel.app)
+  <p align="center">
+    Construyo aplicaciones web completas — interfaz, backend, deploy e integración de IA.
+  </p>
+
+  [![Live Site](https://img.shields.io/badge/🌐_Live_Site-alejandro--murga.vercel.app-ff7a2a?style=for-the-badge)](https://alejandro-murga.vercel.app)
   [![GitHub](https://img.shields.io/badge/GitHub-ELMURGA-181717?style=for-the-badge&logo=github)](https://github.com/ELMURGA/PORTFOLIO)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Alejandro_Hernández-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-murga)
   [![Email](https://img.shields.io/badge/Email-Contacto-EA4335?style=for-the-badge&logo=gmail)](mailto:alejandrohernandemurga@gmail.com)
-  
-  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+  <br>
+
+  ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+  ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
   ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+  ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)
+  ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+  ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
   ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 </div>
 
 ---
 
-## 📋 Sobre el Proyecto
+## 📌 Perfil Profesional
 
-Portfolio web profesional optimizado para rendimiento, que muestra proyectos de desarrollo web frontend. Construido con tecnologías modernas y enfocado en experiencia de usuario, accesibilidad y velocidad de carga.
+Full Stack Developer con **más de 3 años de experiencia** construyendo soluciones digitales y productos web reales para clientes en toda España.
 
-### 🌟 Características Principales
+- **Dazenty (2022 - Actualidad):** Fundador y líder técnico. Gestión integral de más de 20 proyectos de principio a fin — toma de requerimientos, arquitectura, frontend, backend y despliegue en entornos de producción.
+- **MarujaLimón (Sevilla):** Desarrollo web en entorno de agencia, trabajando en producción con autonomía técnica desde el primer día.
+- **Formación:** Titulado como Técnico Superior en **Desarrollo de Aplicaciones Web (DAW)** por MEDAC Sevilla.
+- **Disponibilidad:** Incorporación inmediata.
 
-- ⚡ **Alto Rendimiento** - Optimizado con imágenes WebP (92% reducción de peso)
-- 📱 **Diseño Responsive** - Adaptado para todos los dispositivos y resoluciones
-- 🎯 **UX/UI Moderna** - Interfaz oscura con acentos naranja (#ff7a2a)
-- ✨ **Animaciones Fluidas** - Transiciones CSS suaves y efectos visuales
-- 🔝 **Header Inteligente** - Reducción automática al hacer scroll
-- 🖼️ **Galería Interactiva** - Sistema de filtrado por categorías
-- 📧 **Formulario Funcional** - Validación en tiempo real con Formspree
-- 🎨 **Critical CSS** - Renderizado instantáneo sin bloqueos
-- ♿ **Accesibilidad** - Semántica HTML5 y navegación por teclado
+---
+
+## 🚀 Servicios & Especialidades
+
+```
+  01. DESARROLLO FRONTEND & FULL STACK
+      React · TypeScript · Next.js · Vue.js · Angular · Tailwind CSS
+      Interfaces ultra-rápidas, accesibles y orientadas a la mejor experiencia de usuario.
+
+  02. INTEGRACIÓN DE BACKEND & APIS
+      Node.js · PHP · Supabase · PostgreSQL · REST APIs
+      Lógica de negocio sólida, autenticación segura y persistencia eficiente.
+
+  03. OPTIMIZACIÓN, DEPLOY & IA
+      Vercel · Docker · Git · n8n · Claude Code · GitHub Copilot
+      Despliegues automatizados, flujos de CI/CD e integración de herramientas asistidas por IA.
+```
+
+---
+
+## 💻 Proyectos Destacados
+
+Selección de proyectos reales en producción para clientes y marcas:
+
+| Proyecto | Descripción | Stack | Enlace |
+|----------|-------------|-------|--------|
+| **Dazenty** | Agencia de diseño, desarrollo frontend y automatizaciones con n8n | Next.js · React · n8n · Vercel | [dazenty.com ↗](https://dazenty.com) |
+| **Andalcar** | Plataforma de alquiler de vehículos en Conil, Cádiz y aeropuertos | HTML5 · Tailwind · JS · Vercel | [andalcar.vercel.app ↗](https://andalcar.vercel.app) |
+| **Librería Isidoro \| iPapel** | Comercio digital con buscador escolar de libros y material por centro | JavaScript · E-commerce · Vercel | [ysidoro.vercel.app ↗](https://ysidoro.vercel.app) |
+| **Quirimba** | Catálogo digital y tienda de moda femenina con identidad visual | HTML5 · CSS3 · JS · Vercel | [quirimba.vercel.app ↗](https://quirimba.vercel.app) |
+| **Hermanos Hervás** | Restaurante y eventos con carta interactiva y reservas de mesa | Next.js · React · Sass · Vercel | [hermanos-hervas.vercel.app ↗](https://hermanos-hervas.vercel.app) |
+| **JoCar Automóviles** | Concesionario de ocasión premium con catálogo y tasación online | HTML5 · CSS3 · JS | [jocarautomoviles.com ↗](https://www.jocarautomoviles.com) |
+| **Jándula Moda** | Tienda de moda en Utrera con catálogo de colecciones | Next.js · React · Vercel | [jandulamodautrera.es ↗](https://jandulamodautrera.es) |
+
+---
 
 ## 🛠️ Stack Tecnológico
 
-### Frontend
-- **HTML5** - Estructura semántica y accesible
-- **CSS3** - Estilos personalizados con variables CSS
-- **Tailwind CSS 3** - Framework utility-first vía CDN
-- **JavaScript (ES6+)** - Vanilla JS sin dependencias pesadas
+| Área | Tecnologías |
+|------|-------------|
+| **Frontend Core** | React, TypeScript, Next.js, JavaScript (ES6+), HTML5 Semántico, CSS3 |
+| **Frameworks & UI** | Tailwind CSS 3, Vue.js, Angular, Vanilla CSS Architecture |
+| **Backend & Datos** | Node.js, PHP, Supabase, PostgreSQL, APIs REST |
+| **DevOps & Despliegue** | Vercel, Docker, Git, GitHub Actions |
+| **IA & Productividad** | Claude Code, GitHub Copilot, n8n (automatización de flujos) |
+| **Multimedia & Rendimiento** | Formato WebP (-92% peso), Swiper.js 11, Critical CSS |
 
-### Librerías & Servicios
-- **Swiper.js 11** - Carruseles táctiles y responsivos
-- **Formspree** - Gestión de formularios sin backend
-- **Google Fonts** - Tipografías Archivo Black, Inter
-- **Vercel** - Hosting y despliegue continuo
+---
 
-### Optimizaciones
-- **WebP Images** - Formato de imagen optimizado (73MB → 6MB)
-- **Critical CSS** - Estilos críticos inline para First Paint
-- **Resource Hints** - Preconnect, preload para recursos externos
-- **Async Loading** - Carga asíncrona de fuentes y estilos no críticos
-- **Local Assets** - Iconos tecnológicos almacenados localmente (sin CDN)
+## 📁 Estructura del Repositorio
 
-## 📁 Estructura del Proyecto
-
-\`\`\`
-```
+```bash
 PORTFOLIO/
-├── 📄 index.html                    # Página principal (landing)
-├── 📄 vercel.json                   # Configuración de despliegue Vercel
-├── 📄 README.md                     # Documentación del proyecto
-├── 📄 GUIA_FORMULARIO.md            # Guía de configuración Formspree
+├── 📄 index.html                    # Landing page principal
+├── 📄 vercel.json                   # Configuración y cabeceras de despliegue en Vercel
+├── 📄 README.md                     # Documentación profesional del proyecto
+├── 📄 GUIA_FORMULARIO.md            # Guía técnica de integración con Formspree
 │
-├── 📁 pages/                        # Páginas adicionales
-│   ├── contacto.html                # Formulario de contacto
-│   ├── proyectos.html               # Galería de proyectos filtrable
-│   └── certificados.html            # Certificaciones y formación
+├── 📁 pages/                        # Páginas secundarias del portfolio
+│   ├── contacto.html                # Formulario de contacto y datos directos
+│   ├── proyectos.html               # Galería completa de proyectos con filtros
+│   └── certificados.html            # Certificaciones y titulaciones oficiales
 │
-├── 📁 css/                          # Hojas de estilo
-│   ├── style-common.css             # Estilos compartidos (header, footer, botones)
-│   ├── style-index.css              # Estilos específicos del index
+├── 📁 css/                          # Arquitectura modular de estilos
+│   ├── style-common.css             # Componentes globales (header, ticker, footer "Hablemos.")
+│   ├── style-index.css              # Estilos exclusivos de la landing page
+│   ├── style-proyectos.css          # Estilos de la galería y ventanas modal
 │   ├── style-contacto.css           # Estilos del formulario de contacto
-│   ├── style-proyectos.css          # Estilos de la galería de proyectos
-│   └── style-certificados.css       # Estilos de certificaciones
+│   └── style-certificados.css       # Estilos de acreditaciones y diplomas
 │
-├── 📁 js/                           # Scripts JavaScript
-│   ├── script-common.js             # Funcionalidad compartida (menú móvil, scroll)
-│   ├── script-index.js              # Datos de proyectos y modal
-│   ├── script-contacto.js           # Validación de formulario
-│   └── script-proyectos.js          # Sistema de filtrado de proyectos
+├── 📁 js/                           # Lógica cliente y utilidades JS
+│   ├── script-common.js             # Comportamiento global (scroll, navbar, menú móvil)
+│   ├── script-index.js              # Datos de proyectos destacados y modal interactivo
+│   ├── script-proyectos.js          # Filtrado dinámico por stack y categoría
+│   └── script-contacto.js           # Validación y envío asíncrono con Formspree
 │
-├── 📁 Imagenes/                     # Recursos visuales (formato WebP)
-│   ├── logo/                        # Logo principal y favicons
-│   │   └── logo.webp
-│   ├── personal/                    # Fotografías personales
-│   │   └── mio.webp                 # (LCP - Largest Contentful Paint)
-│   ├── proyectos/                   # Imágenes de proyectos
-│   │   ├── pinturasmerpa.webp       # Proyecto Pinturas Merpa
-│   │   └── ...                      # Otros proyectos
-│   ├── clientes/                    # Logos de clientes (carrusel)
-│   │   └── *.webp
-│   └── tech/                        # Iconos de tecnologías (SVG)
-│       ├── html5.svg
-│       ├── css3.svg
-│       ├── javascript.svg
-│       └── ...
+├── 📁 Imagenes/                     # Assets visuales optimizados
+│   ├── logo/                        # Logotipo corporativo en formato WebP
+│   ├── personal/                    # Retrato hero y fotografía personal (WebP)
+│   ├── proyectos/                   # Mockups y capturas de trabajos realizados
+│   ├── clientes/                    # Logotipos vectoriales/WebP de clientes
+│   └── tech/                        # Iconografía técnica en SVG optimizado
 │
-└── 📁 documents/                    # Documentos descargables
-    └── CV-Alejandro-Hernandez-Murga.pdf
+└── 📁 documents/                    # Currículum vitae y descargables
+    └── Alejandro-Hernández-Murga .pdf
 ```
 
-### Convenciones de Nomenclatura
-- **HTML**: Nombres descriptivos en minúsculas con guiones
-- **CSS**: BEM-like para clases específicas, Tailwind para utilidades
-- **JS**: camelCase para variables y funciones
-- **Imágenes**: lowercase con guiones, formato WebP para rendimiento
+---
 
-## 🚀 Instalación y Uso
-* | `#FFFFFF` | `rgb(255, 255, 255)` | Texto principal |
-| 🔘 **Gris Claro** | `#e5e7eb` | `rgb(229, 231, 235)` | Bordes, dividers |
-| 🔘 **Gris Medio** | `#9ca3af` | `rgb(156, 163, 175)` | Texto secundario |
+## 🎨 Sistema de Diseño (Design System)
 
-### Tipografía
+La identidad visual del sitio está basada en una estética oscura, moderna y tecnológica, inspirada en las mejores prácticas de UI contemporáneas:
 
-- **Headings**: Archivo Black (900) - Impacto visual
-- **Body**: Inter (400, 700) - Legibilidad optimizada
-- **Scale**: Escala modular con base 1rem y ratio 1.5
+- **Fondo Principal:** `#000000` (Negro puro) con degradados radiales sutiles.
+- **Color de Acento Primario:** `#ff7a2a` (Naranja enérgico) para CTAs, estados activos y efectos glow.
+- **Color de Acento Secundario:** `#ff6a00` para transiciones y gradientes.
+- **Tipografía de Impacto:** `Archivo Black` para titulares de gran escala visual.
+- **Tipografía de Lectura:** `Inter` para cuerpos de texto, metadatos y etiquetas.
+- **Microinteracciones:** Hover states animados, números 3D en servicios, carrusel ticker infinito y línea de subrayado dinámico en el footer.
 
-## 📱 Páginas
-### Desarrollo Local
+---
 
-1. **Clona el repositorio**
+## 💻 Ejecución en Local
+
+Para visualizar o clonar el proyecto en tu entorno local:
+
+1. **Clonar el repositorio:**
    ```bash
    git clone https://github.com/ELMURGA/PORTFOLIO.git
    cd PORTFOLIO
    ```
 
-2. **Ejecuta el proyecto**
-   
-   **Opción A - Servidor local (recomendado):**
+2. **Iniciar un servidor de desarrollo:**
+
+   *Opción con Python 3:*
    ```bash
-   # Con Python 3
-   python3 -m http.server 8000
-   
-   # Con Node.js (si tienes npx)
-   npx http-server
-   
-   # Con VS Code
-   # Instala la extensión "Live Server" y haz clic derecho > "Open with Live Server"
-   ```
-   
-   **Opción B - Directamente:**
-   - Abre `index.html` en tu navegador (puede tener limitaciones con algunos recursos)
-
-3. **Accede al sitio**
-   ```
-   http://localhost:8000
+   python3 -m http.server 8080
    ```
 
-### Despliegue en Producción
+   *Opción con Node.js:*
+   ```bash
+   npx serve .
+   # o bien
+   npx http-server -p 8080
+   ```
 
-El sitio está configurado para desplegarse automáticamente en **Vercel**:
+3. **Abrir en el navegador:**
+   ```
+   http://localhost:8080
+   ```
 
-1. Conecta tu repositorio con Vercel
-2. Cada push a `main` despliega automáticamente
-3. URL de producción: [alejandro-murga.vercel.app](https://alejandro-murga.vercel.app)
+---
 
-## 🎨 Design System
+## ⚡ Rendimiento y Core Web Vitals
 
-### Paleta de Colores
+El sitio ha sido diseñado con un enfoque estricto en rendimiento, logrando puntuaciones de primer nivel en Google Lighthouse:
 
-| Color | Hex | RGB | Uso |
-|-------|-----|-----|-----|
-| 🟠 **Naranja Principal** | `#ff7a2a` | `rgb(255, 122, 42)` | CTAs, hovers, enlaces activos |
-| 🟠 **Naranja Secundario** | `#ff6a00` | `rgb(255, 106, 0)` | Gradientes, sombras |
-| ⚫ **Negro** | `#000000` | `rgb(0, 0, 0)` | Fondo principal |
-| ⚪ **Blanco* del Sitio
+- **Compresión WebP:** Reducción drástica del peso total de imágenes (más del 90% respecto a PNG/JPG sin pérdida de fidelidad).
+- **Critical CSS Inlined:** Renderizado del viewport inicial instantáneo, evitando el bloqueo del hilo principal.
+- **Resource Hints:** `preconnect` y `dns-prefetch` para Google Fonts y CDNs.
+- **Carga Asíncrona:** Scripts diferidos con `defer` y fuentes cargadas de forma no bloqueante.
+- **Zero Heavy Framework Runtime:** Carga limpia en Vanilla JS que garantiza un First Input Delay (FID / INP) prácticamente nulo.
 
-### 🏠 [Inicio](/) (`index.html`)
-**Landing page principal del portfolio**
-- Hero section con fotografía y tagline "Hagamos arte. Hagamos diseño."
-- Sección "Sobre mí" con información personal y profesional
-- Carrusel de clientes trabajados (Swiper.js)
-- Stack tecnológico con iconos SVG y efecto glow
-- Proyectos destacados con enlaces directos
-- Timeline interactiva de formación académica y profesional
-- CTA de contacto con degradado naranja
+---
 
-### 📧 [Contacto](/pages/contacto.html)
-**Formulario de contacto funcional**
-- Validación en tiempo real (nombre, email, mensaje)
-- Integración con Formspree para gestión de emails
-  - Enlace al proyecto en vivo
-  - Imágenes optimizadas en WebP
-- Proyectos incluidos:
-  - Pinturas Merpa (HTML/CSS/JS)
-  - Y más...
+## 📬 Contacto & Enlaces
 
-### 📜 [Certificados](/pages/certificados.html)
-**Certificaciones y formación continua**
-- Listado de certificaciones profesionales
-- Enlaces de verificación externos
-- Categorización por área (Diseño, Desarrollo, Marketing)
+¿Tienes un proyecto o buscas incorporar talento a tu equipo de desarrollo?
 
-## 🔧 Personalizaciónacto directo (email, teléfono, redes sociales)
-- Diseño limpio con focus states accesibles
+<div align="center">
 
-### 🖼️ [Proyectos](/pages/proyectos.html)
-**Galería completa de trabajos**
-- Sistema de filtrado por stack tecnológico (React / Next.js, HTML5 / CSS3 / Vanilla JS)
-- Grid responsivo con efectos hover
-- Modal de vista detallada con:
-  - Descripción completa del proyecto
-  - Tecnologías utilizadas
-  - � Personalización
-
-Para adaptar este portfolio a tus necesidades:
-
-1. **Contenido**: Actualiza los textos en cada HTML
-2. **Imágenes**: Reemplaza las imágenes en `/Imagenes/` (usa WebP)
-3. **Colores**: Modifica las variables CSS en `style-common.css`
-4. **Proyectos**: Edita el array `projectsData` en `js/script-index.js`
-5. **Formulario**: Configura tu endpoint de Formspree en `contacto.html`
-
-## 📊 Métricas de Rendimiento
-
-**Lighthouse Score** (Mobile - diciembre 2025):
-- Performance: ~85-90
-- Accessibility: 95+
-- Best Practices: 95+
-- SEO: 90+
-
-**Optimizaciones aplicadas:**
-- Conversión de imágenes a WebP (-92% peso)
-- Critical CSS inline
-- Resource hints (preconnect, preload)
-- Lazy loading de imágenes no críticas
-- Minificación de CSS y JS
-
-## 📞 Contacto
-
-<diva align="center">
-
-| Plataforma | Enlace |
-|------------|--------|
+| Canal | Enlace directo |
+|-------|----------------|
+| 🌐 **Portfolio en vivo** | [alejandro-murga.vercel.app](https://alejandro-murga.vercel.app) |
+| 💼 **LinkedIn** | [linkedin.com/in/alejandro-hernández-murga](https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-murga) |
+| 💻 **GitHub** | [github.com/ELMURGA](https://github.com/ELMURGA) |
 | 📧 **Email** | [alejandrohernandemurga@gmail.com](mailto:alejandrohernandemurga@gmail.com) |
 | 📱 **Teléfono** | [+34 676 448 762](tel:+34676448762) |
 | 📸 **Instagram** | [@ale_h.m](https://www.instagram.com/ale_h.m/) |
-| 💻 **GitHub** | [ELMURGA](https://github.com/ELMURGA) |
-| 💼 **LinkedIn** | [Alejandro Hernández Murga](https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-murga) |
-| 🌐 **Portfolio** | [alejandro-murga.vercel.app](https://alejandro-murga.vercel.app) |
 
+<br>
 
 ---
 
 <p align="center">
-  <strong>© 2025 Alejandro Hernández Murga. Todos los derechos reservados.</strong>
+  <strong>© 2026 Alejandro Hernández Murga · Full Stack Developer</strong><br>
+  Diseñado y programado con pasión por los detalles y la ingeniería web.
 </p>
 
-<p align="center">
-  Hecho con ❤️ y ☕
-</p>
+</div>

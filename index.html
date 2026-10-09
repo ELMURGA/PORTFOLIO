@@ -1,125 +1,274 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandro Hernández Murga – Frontend Developer</title>
-    <meta name="description" content="Portfolio de Alejandro Hernández Murga, Desarrollador Frontend Junior especializado en React, Next.js y Tailwind. Disponible para proyectos y trabajo en Sevilla y remoto.">
-    
+    <title>Alejandro Hernández Murga — Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio de Alejandro Hernández Murga, Full Stack Developer especializado en React, TypeScript y Next.js. Disponible para incorporación inmediata.">
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alejandro-murga.vercel.app/">
+    <meta property="og:title" content="Alejandro Hernández Murga — Full Stack Developer">
+    <meta property="og:description"
+        content="Portfolio de Alejandro Hernández Murga, Full Stack Developer especializado en React, TypeScript y Next.js. Disponible para incorporación inmediata.">
+    <meta property="og:image" content="Imagenes/personal/mio.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alejandro Hernández Murga — Full Stack Developer">
+    <meta name="twitter:description"
+        content="Portfolio de Alejandro Hernández Murga, Full Stack Developer especializado en React, TypeScript y Next.js. Disponible para incorporación inmediata.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="Imagenes/logo/favicon-32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="Imagenes/logo/favicon-192.png">
     <link rel="apple-touch-icon" sizes="512x512" href="Imagenes/logo/favicon-512.png">
-    
+
     <!-- Preload LCP image - CRITICAL -->
     <link rel="preload" as="image" href="Imagenes/personal/mio.webp" fetchpriority="high" type="image/webp">
-    
+
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    
+
     <!-- Critical CSS inline - Above the fold styles -->
     <style>
-        *{box-sizing:border-box;margin:0;padding:0}
-        body{background:#000;color:#fff;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5}
-        .bg-black{background-color:#000}
-        .text-white{color:#fff}
-        header{padding:1.5rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:50;background:rgba(0,0,0,.8);backdrop-filter:blur(4px)}
-        .logo img{height:7rem;object-fit:contain}
-        main{max-width:1280px;margin:0 auto;padding:0 1.5rem}
-        section{margin:3rem 0}
-        .flex{display:flex}
-        .items-center{align-items:center}
-        .gap-12{gap:3rem}
-        .rounded-lg{border-radius:.5rem}
-        .shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
-        .w-full{width:100%}
-        img{max-width:100%;height:auto}
-        @media(min-width:768px){.logo img{height:10rem}.md\:w-1\/2{width:50%}.md\:flex-row{flex-direction:row}}
-        @media(min-width:1024px){.logo img{height:14rem}}
-        .font-archivo-black{font-family:'Archivo Black',Impact,sans-serif}
-        h1{font-size:2.25rem;line-height:1.1;font-weight:900}
-        @media(min-width:768px){h1{font-size:3.75rem}}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.5
+        }
+
+        .bg-black {
+            background-color: #000
+        }
+
+        .text-white {
+            color: #fff
+        }
+
+        header {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(0, 0, 0, .8);
+            backdrop-filter: blur(4px)
+        }
+
+        .logo img {
+            height: 7rem;
+            object-fit: contain
+        }
+
+        main {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem
+        }
+
+        section {
+            margin: 3rem 0
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .gap-12 {
+            gap: 3rem
+        }
+
+        .rounded-lg {
+            border-radius: .5rem
+        }
+
+        .shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1)
+        }
+
+        .w-full {
+            width: 100%
+        }
+
+        img {
+            max-width: 100%;
+            height: auto
+        }
+
+        @media(min-width:768px) {
+            .logo img {
+                height: 10rem
+            }
+
+            .md\:w-1\/2 {
+                width: 50%
+            }
+
+            .md\:flex-row {
+                flex-direction: row
+            }
+        }
+
+        @media(min-width:1024px) {
+            .logo img {
+                height: 14rem
+            }
+        }
+
+        .font-archivo-black {
+            font-family: 'Archivo Black', Impact, sans-serif
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            line-height: 1.1;
+            font-weight: 900
+        }
+
+        @media(min-width:768px) {
+            h1 {
+                font-size: 3.75rem
+            }
+        }
     </style>
-    
+
     <!-- Google Fonts - async load -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700&display=swap"></noscript>
-    
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700&display=swap">
+    </noscript>
+
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="css/style-common.css?v=20260414">
     <link rel="stylesheet" href="css/style-index.css?v=20260414">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Swiper.js CSS - load async -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'"/>
-    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/></noscript>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print"
+        onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </noscript>
+
     <!-- SEO Canonical URL -->
     <link rel="canonical" href="https://alejandro-murga.vercel.app/">
-    
+
     <!-- Vercel Web Analytics -->
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
 </head>
+
 <body class="bg-black text-white">
 
     <!-- HEADER -->
-    <header id="main-header" class="p-6 md:p-8 flex justify-between items-center sticky top-0 z-50 bg-black bg-opacity-95 backdrop-blur-sm transition-all duration-300">
+    <header id="main-header"
+        class="p-6 md:p-8 flex justify-between items-center sticky top-0 z-50 bg-black bg-opacity-95 backdrop-blur-sm transition-all duration-300">
         <div class="logo">
             <a href="#">
-                <img src="Imagenes/logo/logo.webp" alt="Logo Alejandro Hernández Murga" class="h-28 md:h-40 lg:h-56 object-contain"> 
+                <img src="Imagenes/logo/logo.webp" alt="Logo Alejandro Hernández Murga"
+                    class="h-28 md:h-40 lg:h-56 object-contain">
             </a>
         </div>
         <nav class="hidden md:flex items-center space-x-8">
             <a href="#" class="hover:text-gray-300 transition-colors">Inicio</a>
-            <a href="#que-hago" class="hover:text-gray-300 transition-colors">¿Qué hago?</a>
+            <a href="#servicios" class="hover:text-gray-300 transition-colors">Servicios</a>
             <a href="#formacion" class="hover:text-gray-300 transition-colors">Formación</a>
             <a href="#proyectos" class="hover:text-gray-300 transition-colors">Proyectos</a>
             <a href="pages/certificados.html" class="hover:text-gray-300 transition-colors">Certificados</a>
         </nav>
         <div class="hidden md:flex">
-            <a href="pages/contacto.html" class="cta-contact bg-white text-black font-bold py-3 px-6 rounded-full flex items-center space-x-2 hover:bg-gray-200 transition-colors">
+            <a href="pages/contacto.html"
+                class="cta-contact bg-white text-black font-bold py-3 px-6 rounded-full flex items-center space-x-2 hover:bg-gray-200 transition-colors">
                 <!-- Lightbulb SVG Icon -->
-                <svg class="w-5 h-5" viewBox="0 0 352 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z"></path></svg>
+                <svg class="w-5 h-5" viewBox="0 0 352 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path
+                        d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z">
+                    </path>
+                </svg>
                 <span>CUÉNTAME TU IDEA</span>
             </a>
         </div>
         <div class="md:hidden">
             <button id="menu-btn" class="text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
             </button>
         </div>
     </header>
-    
+
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-black fixed top-0 left-0 w-full h-full z-40 flex flex-col items-center justify-center space-y-8">
+    <div id="mobile-menu"
+        class="hidden md:hidden bg-black fixed top-0 left-0 w-full h-full z-40 flex flex-col items-center justify-center space-y-8">
         <a href="#" class="text-2xl hover:text-gray-300">Inicio</a>
-        <a href="#que-hago" class="text-2xl hover:text-gray-300">¿Qué hago?</a>
+        <a href="#servicios" class="text-2xl hover:text-gray-300">Servicios</a>
         <a href="#formacion" class="text-2xl hover:text-gray-300">Formación</a>
         <a href="#proyectos" class="text-2xl hover:text-gray-300">Proyectos</a>
-        <a href="pages/contacto.html" class="cta-contact mt-4 bg-white text-black font-bold py-3 px-6 rounded-full flex items-center space-x-2">
+        <a href="pages/contacto.html"
+            class="cta-contact mt-4 bg-white text-black font-bold py-3 px-6 rounded-full flex items-center space-x-2">
             <span>CUÉNTAME TU IDEA</span>
         </a>
     </div>
 
     <!-- MAIN CONTENT -->
     <main class="container mx-auto px-6 py-12">
-        
+
         <!-- Hero Section -->
-        <section class="flex flex-col md:flex-row items-center gap-12 my-12 md:my-24 reveal">
-            <div class="md:w-1/2">
-                <!-- Reemplazada: foto de Alejandro -->
-                <img src="Imagenes/personal/mio.webp" alt="Retrato de Alejandro" class="rounded-lg shadow-lg w-full" width="3041" height="4055" fetchpriority="high">
+        <section class="flex flex-col md:flex-row items-center gap-10 md:gap-14 my-10 md:my-20 reveal">
+            <div class="w-full md:w-5/12 lg:w-1/2">
+                <div class="hero-image-wrapper">
+                    <img src="Imagenes/personal/mio.webp" alt="Alejandro Hernández Murga — Full Stack Developer"
+                        class="w-full h-auto object-cover rounded-2xl" width="3041" height="4055" fetchpriority="high">
+                </div>
             </div>
-            <div class="md:w-1/2 flex justify-center">
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-archivo-black leading-tight text-center">Hagamos arte.<br>Hagamos diseño.</h1>
+            <div class="w-full md:w-7/12 lg:w-1/2 flex flex-col justify-center">
+                <h1 class="hero-title">
+                    Alejandro Hernández Murga
+                </h1>
+
+                <p class="hero-role">
+                    <span>Full Stack Developer</span>
+                    <span class="hero-role-sep">·</span>
+                    <span class="hero-role-sub">Frontend Specialist</span>
+                </p>
+
+                <p class="hero-desc">
+                    Construyo aplicaciones web completas — interfaz, backend, deploy e integración de IA.
+                </p>
+
+                <div class="hero-tech-stack">
+                    <span class="hero-tech-tag">React</span>
+                    <span class="hero-tech-sep">·</span>
+                    <span class="hero-tech-tag">TypeScript</span>
+                    <span class="hero-tech-sep">·</span>
+                    <span class="hero-tech-tag">Next.js</span>
+                </div>
             </div>
         </section>
 
@@ -130,23 +279,51 @@
                     <!-- Imagen -->
                     <div class="order-2 md:order-1">
                         <div class="about-image-wrapper">
-                            <img src="Imagenes/personal/foto2.webp" alt="Sobre mí - Alejandro Hernández" class="rounded-2xl shadow-2xl" width="4284" height="5712" loading="lazy">
+                            <img src="Imagenes/personal/foto2.webp" alt="Sobre mí - Alejandro Hernández"
+                                class="rounded-2xl shadow-2xl" width="4284" height="5712" loading="lazy">
                         </div>
                     </div>
-                    
+
                     <!-- Contenido -->
                     <div class="order-1 md:order-2">
                         <h2 class="text-4xl md:text-5xl font-archivo-black mb-6">Sobre mí</h2>
                         <div class="about-content space-y-4 text-gray-300 text-lg leading-relaxed">
-                            <p>Soy Alejandro un estudiante de <strong class="text-white">Diseño y Desarrollo Web</strong> con una gran pasión por crear experiencias digitales que conecten con las personas.</p>
-                            
-                            <p>Me apasiona la creación de <strong class="text-white">soluciones innovadoras y experiencias digitales de calidad</strong>, con un enfoque especial en el <strong class="text-white">desarrollo web</strong> y el <strong class="text-white">desarrollo frontend</strong>.</p>
-                            
-                            <p>Mi formación me ha permitido desarrollar habilidades tanto en <strong class="text-white">programación</strong> como en <strong class="text-white">diseño visual</strong>, aunque mi verdadera pasión está en el <strong class="text-orange-500">frontend</strong>, donde el código y la creatividad se encuentran.</p>
-                            
-                            <p>Me interesa explorar continuamente <strong class="text-white">nuevas herramientas y tecnologías</strong> que aporten valor a los proyectos y mejoren la experiencia del usuario.</p>
-                            
-                            <p>Creo firmemente en el <strong class="text-white">aprendizaje continuo</strong>, la <strong class="text-white">adaptabilidad</strong> y el <strong class="text-white">trabajo en equipo</strong> como pilares fundamentales para crecer como profesional.</p>
+                            <p><strong class="text-white">Full Stack Developer</strong> con más de 3 años de experiencia
+                                construyendo productos web reales para clientes en toda España.</p>
+
+                            <p>Fundé <strong class="text-white">Dazenty</strong> en 2022, donde he gestionado más de 20
+                                proyectos completos de principio a fin — desde el análisis hasta el deploy en
+                                producción. También hice prácticas en <strong class="text-white">MarujaLimón</strong>
+                                (Sevilla), trabajando en producción con autonomía desde el primer día.</p>
+
+                            <p>Mi especialización es el <strong class="text-orange-500">frontend — React, TypeScript,
+                                    Next.js</strong> — pero gestiono todo el stack cuando el proyecto lo necesita:
+                                <strong class="text-white">Node.js, PHP, Supabase, APIs REST, Docker</strong>.</p>
+
+                            <p>Integro IA — <strong class="text-white">Claude Code, GitHub Copilot, n8n</strong> — en mi
+                                flujo de trabajo diario.</p>
+
+                            <div class="pt-4 mt-6 border-t border-white/10 space-y-3">
+                                <div class="flex items-center gap-3 text-base text-gray-200">
+                                    <span
+                                        class="w-8 h-8 rounded-lg bg-orange-500/10 text-orange-500 border border-orange-500/20 flex items-center justify-center shrink-0">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path
+                                                d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a10.97 10.97 0 00-.25 2.449c0 4.142 3.134 7.5 7 7.5s7-3.358 7-7.5c0-.84-.1-1.66-.25-2.449l2.644-1.131a1 1 0 000-1.84l-7-3zM10 4.236l4.636 1.987L10 8.21 5.364 6.223 10 4.236z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span><strong class="text-white">Titulado en Desarrollo de Aplicaciones Web</strong>
+                                        · MEDAC Sevilla</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-base text-gray-200">
+                                    <span
+                                        class="w-8 h-8 rounded-lg bg-orange-500/10 text-orange-500 border border-orange-500/20 flex items-center justify-center shrink-0">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse"></span>
+                                    </span>
+                                    <span><strong class="text-orange-500">Disponibilidad inmediata.</strong></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,41 +337,59 @@
             <div class="swiper client-swiper">
                 <div class="swiper-wrapper items-center">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="Imagenes/clientes/logodazenty.webp" alt="Logo Cliente 1" class="mx-auto" loading="lazy" width="1600" height="1600"></div>
-                    <div class="swiper-slide"><img src="Imagenes/clientes/logosevilla.svg" alt="Logo Cliente 2" class="mx-auto" loading="lazy"></div>
-                    <div class="swiper-slide"><img src="Imagenes/clientes/costasol.webp" alt="Logo Cliente 3" class="mx-auto" loading="lazy" width="1536" height="1024"></div>
-                    <div class="swiper-slide"><img src="Imagenes/clientes/PAGINA WEB BLANCO.svg" alt="Logo Cliente 4" class="mx-auto" loading="lazy"></div>
-                    <div class="swiper-slide"><img src="Imagenes/clientes/celerity.webp" alt="Logo Cliente 5" class="mx-auto" loading="lazy" width="1024" height="1024"></div>
-                    <div class="swiper-slide"><img src="Imagenes/clientes/pavistatto.webp" alt="Logo Cliente 6" class="mx-auto" loading="lazy" width="1194" height="1198"></div>
-                    <div class="swiper-slide"><img src="Imagenes/clientes/logo-dvll.webp" alt="Logo Cliente 8" class="mx-auto" loading="lazy"></div>
-                    <div class="swiper-slide"><img src="Imagenes/clientes/logo-jandula.webp" alt="Logo Cliente 9" class="mx-auto" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="Imagenes/clientes/logodazenty.webp" alt="Logo Cliente 1"
+                            class="mx-auto" loading="lazy" width="1600" height="1600"></div>
+                    <div class="swiper-slide"><img src="Imagenes/clientes/logosevilla.svg" alt="Logo Cliente 2"
+                            class="mx-auto" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="Imagenes/clientes/costasol.webp" alt="Logo Cliente 3"
+                            class="mx-auto" loading="lazy" width="1536" height="1024"></div>
+                    <div class="swiper-slide"><img src="Imagenes/clientes/PAGINA WEB BLANCO.svg" alt="Logo Cliente 4"
+                            class="mx-auto" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="Imagenes/clientes/celerity.webp" alt="Logo Cliente 5"
+                            class="mx-auto" loading="lazy" width="1024" height="1024"></div>
+                    <div class="swiper-slide"><img src="Imagenes/clientes/pavistatto.webp" alt="Logo Cliente 6"
+                            class="mx-auto" loading="lazy" width="1194" height="1198"></div>
+                    <div class="swiper-slide"><img src="Imagenes/clientes/logo-dvll.webp" alt="Logo Cliente 8"
+                            class="mx-auto" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="Imagenes/clientes/logo-jandula.webp" alt="Logo Cliente 9"
+                            class="mx-auto" loading="lazy"></div>
 
                 </div>
             </div>
         </section>
 
         <hr class="border-gray-700 my-24 reveal">
-        
+
         <!-- Formación y Experiencia Section -->
         <section id="formacion" class="my-24 reveal">
             <h2 class="text-4xl md:text-5xl font-archivo-black text-center mb-16">Formación y Experiencia</h2>
-            
+
             <div class="max-w-5xl mx-auto">
                 <!-- Formación Académica -->
                 <div class="mb-16">
-                    <h3 class="text-2xl md:text-3xl font-archivo-black mb-8 text-orange-500 text-center">Formación Académica</h3>
-                    
+                    <h3 class="text-2xl md:text-3xl font-archivo-black mb-8 text-orange-500 text-center">Formación
+                        Académica</h3>
+
                     <div class="timeline">
                         <!-- Técnico Superior en Desarrollo de Aplicaciones Web -->
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                                    <h4 class="text-xl font-bold">Técnico Superior en Desarrollo de Aplicaciones Web</h4>
-                                    <span class="timeline-date">Septiembre 2024 - Junio 2026</span>
+                                    <h4 class="text-xl font-bold">Técnico Superior en Desarrollo de Aplicaciones Web
+                                    </h4>
+                                    <span class="timeline-date">Titulado · 2024 - 2026</span>
                                 </div>
-                                <p class="text-orange-500 font-semibold mb-2 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0"><path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.013 3.5-4.667 3.5-8.077A8 8 0 004 12c0 3.09 1.408 5.823 3.235 7.85a19.005 19.005 0 002.088 1.98c.32.247.647.487.985.713.006.004.012.007.018.01l.028.016zm0 0l-.036-.02M12 13a1 1 0 100-2 1 1 0 000 2zm0-8a4 4 0 00-4 4c0 1.39.563 2.697 1.5 3.672V14a1 1 0 001 1h3a1 1 0 001-1v-1.328A4 4 0 0016 9a4 4 0 00-4-4z" clip-rule="evenodd"/></svg> MEDAC</p>
-                                <p class="text-gray-300">Formación centrada en el desarrollo de aplicaciones web modernas, incluyendo frontend, backend, bases de datos y diseño de interfaces de usuario.</p>
+                                <p class="text-orange-500 font-semibold mb-2 flex items-center gap-1"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-4 h-4 shrink-0">
+                                        <path fill-rule="evenodd"
+                                            d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.013 3.5-4.667 3.5-8.077A8 8 0 004 12c0 3.09 1.408 5.823 3.235 7.85a19.005 19.005 0 002.088 1.98c.32.247.647.487.985.713.006.004.012.007.018.01l.028.016zm0 0l-.036-.02M12 13a1 1 0 100-2 1 1 0 000 2zm0-8a4 4 0 00-4 4c0 1.39.563 2.697 1.5 3.672V14a1 1 0 001 1h3a1 1 0 001-1v-1.328A4 4 0 0016 9a4 4 0 00-4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg> MEDAC</p>
+                                <p class="text-gray-300">Formación centrada en el desarrollo de aplicaciones web
+                                    modernas, incluyendo frontend, backend, bases de datos y diseño de interfaces de
+                                    usuario.</p>
                             </div>
                         </div>
 
@@ -206,8 +401,15 @@
                                     <h4 class="text-xl font-bold">Bachillerato</h4>
                                     <span class="timeline-date">Completado</span>
                                 </div>
-                                <p class="text-orange-500 font-semibold mb-2 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0"><path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.013 3.5-4.667 3.5-8.077A8 8 0 004 12c0 3.09 1.408 5.823 3.235 7.85a19.005 19.005 0 002.088 1.98c.32.247.647.487.985.713.006.004.012.007.018.01l.028.016zm0 0l-.036-.02M12 13a1 1 0 100-2 1 1 0 000 2zm0-8a4 4 0 00-4 4c0 1.39.563 2.697 1.5 3.672V14a1 1 0 001 1h3a1 1 0 001-1v-1.328A4 4 0 0016 9a4 4 0 00-4-4z" clip-rule="evenodd"/></svg> Salesianos Utrera</p>
-                                <p class="text-gray-300">Segundo de Bachillerato con enfoque en preparación para estudios superiores.</p>
+                                <p class="text-orange-500 font-semibold mb-2 flex items-center gap-1"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-4 h-4 shrink-0">
+                                        <path fill-rule="evenodd"
+                                            d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.013 3.5-4.667 3.5-8.077A8 8 0 004 12c0 3.09 1.408 5.823 3.235 7.85a19.005 19.005 0 002.088 1.98c.32.247.647.487.985.713.006.004.012.007.018.01l.028.016zm0 0l-.036-.02M12 13a1 1 0 100-2 1 1 0 000 2zm0-8a4 4 0 00-4 4c0 1.39.563 2.697 1.5 3.672V14a1 1 0 001 1h3a1 1 0 001-1v-1.328A4 4 0 0016 9a4 4 0 00-4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg> Salesianos Utrera</p>
+                                <p class="text-gray-300">Segundo de Bachillerato con enfoque en preparación para
+                                    estudios superiores.</p>
                             </div>
                         </div>
                     </div>
@@ -215,8 +417,9 @@
 
                 <!-- Experiencia Laboral -->
                 <div>
-                    <h3 class="text-2xl md:text-3xl font-archivo-black mb-8 text-orange-500 text-center">Experiencia Laboral</h3>
-                    
+                    <h3 class="text-2xl md:text-3xl font-archivo-black mb-8 text-orange-500 text-center">Experiencia
+                        Laboral</h3>
+
                     <div class="timeline">
                         <!-- Dazenty — Fundador & Desarrollador Frontend -->
                         <div class="timeline-item">
@@ -226,10 +429,17 @@
                                     <h4 class="text-xl font-bold">Dazenty — Fundador &amp; Desarrollador Frontend</h4>
                                     <span class="timeline-date">2022 - Actualidad</span>
                                 </div>
-                                <p class="text-orange-500 font-semibold mb-2 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0"><path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.013 3.5-4.667 3.5-8.077A8 8 0 004 12c0 3.09 1.408 5.823 3.235 7.85a19.005 19.005 0 002.088 1.98c.32.247.647.487.985.713.006.004.012.007.018.01l.028.016zm0 0l-.036-.02M12 13a1 1 0 100-2 1 1 0 000 2zm0-8a4 4 0 00-4 4c0 1.39.563 2.697 1.5 3.672V14a1 1 0 001 1h3a1 1 0 001-1v-1.328A4 4 0 0016 9a4 4 0 00-4-4z" clip-rule="evenodd"/></svg> Agencia Web, Sevilla</p>
+                                <p class="text-orange-500 font-semibold mb-2 flex items-center gap-1"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-4 h-4 shrink-0">
+                                        <path fill-rule="evenodd"
+                                            d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.013 3.5-4.667 3.5-8.077A8 8 0 004 12c0 3.09 1.408 5.823 3.235 7.85a19.005 19.005 0 002.088 1.98c.32.247.647.487.985.713.006.004.012.007.018.01l.028.016zm0 0l-.036-.02M12 13a1 1 0 100-2 1 1 0 000 2zm0-8a4 4 0 00-4 4c0 1.39.563 2.697 1.5 3.672V14a1 1 0 001 1h3a1 1 0 001-1v-1.328A4 4 0 0016 9a4 4 0 00-4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg> Agencia Web, Sevilla</p>
                                 <ul class="text-gray-300 space-y-2 list-disc list-inside">
                                     <li>Fundación y gestión de agencia web especializada en desarrollo frontend</li>
-                                    <li>Desarrollo de webs con React, Next.js, Tailwind y Vercel para clientes reales</li>
+                                    <li>Desarrollo de webs con React, Next.js, Tailwind y Vercel para clientes reales
+                                    </li>
                                     <li>Gestión de proyectos completos: propuesta comercial, desarrollo y entrega</li>
                                     <li>Integración de CMS headless con Sanity y bases de datos con Supabase</li>
                                 </ul>
@@ -244,9 +454,16 @@
                                     <h4 class="text-xl font-bold">Prácticas — Desarrollador Web</h4>
                                     <span class="timeline-date">Marzo 2026 - Junio 2026</span>
                                 </div>
-                                <p class="text-orange-500 font-semibold mb-2 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0"><path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.013 3.5-4.667 3.5-8.077A8 8 0 004 12c0 3.09 1.408 5.823 3.235 7.85a19.005 19.005 0 002.088 1.98c.32.247.647.487.985.713.006.004.012.007.018.01l.028.016zm0 0l-.036-.02M12 13a1 1 0 100-2 1 1 0 000 2zm0-8a4 4 0 00-4 4c0 1.39.563 2.697 1.5 3.672V14a1 1 0 001 1h3a1 1 0 001-1v-1.328A4 4 0 0016 9a4 4 0 00-4-4z" clip-rule="evenodd"/></svg> Maruja Limón, Utrera</p>
+                                <p class="text-orange-500 font-semibold mb-2 flex items-center gap-1"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-4 h-4 shrink-0">
+                                        <path fill-rule="evenodd"
+                                            d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.013 3.5-4.667 3.5-8.077A8 8 0 004 12c0 3.09 1.408 5.823 3.235 7.85a19.005 19.005 0 002.088 1.98c.32.247.647.487.985.713.006.004.012.007.018.01l.028.016zm0 0l-.036-.02M12 13a1 1 0 100-2 1 1 0 000 2zm0-8a4 4 0 00-4 4c0 1.39.563 2.697 1.5 3.672V14a1 1 0 001 1h3a1 1 0 001-1v-1.328A4 4 0 0016 9a4 4 0 00-4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg> Maruja Limón, Utrera</p>
                                 <ul class="text-gray-300 space-y-2 list-disc list-inside">
-                                    <li>Manejo y administración de WordPress, HTML, CSS y JavaScript en proyectos reales de clientes</li>
+                                    <li>Manejo y administración de WordPress, HTML, CSS y JavaScript en proyectos reales
+                                        de clientes</li>
                                     <li>Desarrollo con PHP y JavaScript</li>
                                     <li>Resolución autónoma de incidencias en entornos de producción</li>
                                     <li>Contacto directo con cliente final</li>
@@ -258,9 +475,12 @@
 
                 <!-- Botón Descargar CV -->
                 <div class="text-center mt-12">
-                    <a href="documents/Aejandro-Hernández-Murga.pdf" download="CV-Alejandro-Hernandez-Murga.pdf" class="download-cv-btn inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-full hover:shadow-2xl transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    <a href="documents/Alejandro-Hernandez-Murga.pdf" download="CV-Alejandro-Hernandez-Murga.pdf"
+                        class="download-cv-btn inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-full hover:shadow-2xl transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                         Descargar CV
                     </a>
@@ -269,57 +489,52 @@
         </section>
 
         <hr class="border-gray-700 my-24 reveal">
-        
+
         <!-- Services Section -->
-        <section id="que-hago" class="my-24 reveal">
+        <section id="servicios" class="my-24 reveal">
+            <!-- Anchor de compatibilidad para enlaces antiguos -->
+            <div id="que-hago"></div>
+
             <h2 class="text-4xl md:text-5xl font-archivo-black text-center mb-16">Desarrollo que convierte ideas en productos digitales reales.</h2>
+            
             <div class="space-y-12">
-                <!-- Service 1 -->
+                <!-- Service 1: Desarrollo Frontend -->
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
                     <div class="md:col-span-1 text-5xl font-archivo-black service-number" data-text="01">01</div>
-                    <div class="md:col-span-5">
-                        <h3 class="text-2xl font-bold uppercase">Desarrollo de Aplicaciones Web</h3>
-                    </div>
-                    <div class="md:col-span-6">
-                        <p class="text-gray-300">Desarrollo aplicaciones web modernas, escalables y orientadas al rendimiento. Desde la arquitectura del proyecto hasta el despliegue en producción, con React y Next.js como base.</p>
-                    </div>
-                </div>
-                <hr class="border-gray-800">
-                <!-- Service 2 -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
-                    <div class="md:col-span-1 text-5xl font-archivo-black service-number" data-text="02">02</div>
                     <div class="md:col-span-5">
                         <h3 class="text-2xl font-bold uppercase">Desarrollo Frontend</h3>
                     </div>
                     <div class="md:col-span-6">
-                        <p class="text-gray-300">Maqueto interfaces de usuario con atención al detalle, accesibilidad y experiencia de usuario. Trabajo con Tailwind CSS, Sass y sistemas de diseño coherentes para que cada pixel tenga sentido.</p>
+                        <p class="text-gray-300">React · Next.js · TypeScript · Vue.js · Angular · Tailwind CSS</p>
                     </div>
                 </div>
                 <hr class="border-gray-800">
-                <!-- Service 3 -->
+
+                <!-- Service 2: Desarrollo Full Stack -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+                    <div class="md:col-span-1 text-5xl font-archivo-black service-number" data-text="02">02</div>
+                    <div class="md:col-span-5">
+                        <h3 class="text-2xl font-bold uppercase">Desarrollo Full Stack</h3>
+                    </div>
+                    <div class="md:col-span-6">
+                        <p class="text-gray-300">Backend con Node.js · PHP · Supabase · APIs REST · Docker</p>
+                    </div>
+                </div>
+                <hr class="border-gray-800">
+
+                <!-- Service 3: Automatización e IA -->
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
                     <div class="md:col-span-1 text-5xl font-archivo-black service-number" data-text="03">03</div>
                     <div class="md:col-span-5">
-                        <h3 class="text-2xl font-bold uppercase">Mantenimiento Web</h3>
+                        <h3 class="text-2xl font-bold uppercase">Automatización e IA</h3>
                     </div>
                     <div class="md:col-span-6">
-                        <p class="text-gray-300">Me encargo de que tu web esté siempre actualizada, segura y optimizada. Desde correcciones puntuales hasta evolución continua del producto digital.</p>
-                    </div>
-                </div>
-                <hr class="border-gray-800">
-                <!-- Service 4 -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
-                    <div class="md:col-span-1 text-5xl font-archivo-black service-number" data-text="04">04</div>
-                    <div class="md:col-span-5">
-                        <h3 class="text-2xl font-bold uppercase">Integración de APIs y CMS Headless</h3>
-                    </div>
-                    <div class="md:col-span-6">
-                        <p class="text-gray-300">Conecto tu aplicación con servicios externos y CMS headless como Sanity o Supabase para gestionar contenido de forma flexible, escalar tu plataforma y automatizar flujos de datos.</p>
+                        <p class="text-gray-300">Workflows con n8n · Integración de APIs de IA · Claude Code</p>
                     </div>
                 </div>
             </div>
         </section>
-             <!-- Galería de Logos / Tecnologías -->
+        <!-- Galería de Logos / Tecnologías -->
         <section id="galeria-tecnologias" class="my-20 reveal">
             <div class="w-full max-w-5xl mx-auto">
                 <div class="text-center mb-8">
@@ -330,85 +545,133 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8">
                     <!-- React -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer" title="Documentación React" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/react.svg" alt="Logo de React" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://reactjs.org/docs/getting-started.html" target="_blank"
+                            rel="noopener noreferrer" title="Documentación React"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/react.svg" alt="Logo de React"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
 
                     <!-- JavaScript -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" title="Documentación JavaScript" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/javascript.svg" alt="Logo de JavaScript" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"
+                            rel="noopener noreferrer" title="Documentación JavaScript"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/javascript.svg" alt="Logo de JavaScript"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
 
                     <!-- SASS -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://sass-lang.com/documentation" target="_blank" rel="noopener noreferrer" title="Documentación SASS" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/sass.svg" alt="Logo de SASS" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://sass-lang.com/documentation" target="_blank" rel="noopener noreferrer"
+                            title="Documentación SASS"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/sass.svg" alt="Logo de SASS"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
 
                     <!-- Git -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer" title="Documentación Git" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/git.svg" alt="Logo de Git" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer"
+                            title="Documentación Git"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/git.svg" alt="Logo de Git"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
 
                     <!-- Vercel -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://vercel.com/docs" target="_blank" rel="noopener noreferrer" title="Documentación Vercel" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/vercel.svg" alt="Logo de Vercel" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://vercel.com/docs" target="_blank" rel="noopener noreferrer"
+                            title="Documentación Vercel"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/vercel.svg" alt="Logo de Vercel"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
 
                     <!-- Supabase -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://supabase.com/docs" target="_blank" rel="noopener noreferrer" title="Documentación Supabase" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/supabase.svg" alt="Logo de Supabase" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://supabase.com/docs" target="_blank" rel="noopener noreferrer"
+                            title="Documentación Supabase"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/supabase.svg" alt="Logo de Supabase"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
 
                     <!-- Sanity -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://www.sanity.io/docs" target="_blank" rel="noopener noreferrer" title="Documentación Sanity" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/sanity.svg" alt="Logo de Sanity" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://www.sanity.io/docs" target="_blank" rel="noopener noreferrer"
+                            title="Documentación Sanity"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/sanity.svg" alt="Logo de Sanity"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
 
                     <!-- HTML -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer" title="Documentación HTML" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/html5.svg" alt="Logo de HTML5" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"
+                            rel="noopener noreferrer" title="Documentación HTML"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/html5.svg" alt="Logo de HTML5"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
 
                     <!-- CSS -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank" rel="noopener noreferrer" title="Documentación CSS" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/css3.svg" alt="Logo de CSS3" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"
+                            rel="noopener noreferrer" title="Documentación CSS"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/css3.svg" alt="Logo de CSS3"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
 
                     <!-- Resend -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://resend.com/docs" target="_blank" rel="noopener noreferrer" title="Documentación Resend" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/resend.svg" alt="Logo de Resend" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://resend.com/docs" target="_blank" rel="noopener noreferrer"
+                            title="Documentación Resend"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/resend.svg" alt="Logo de Resend"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
 
                     <!-- Figma -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://help.figma.com/hc/en-us" target="_blank" rel="noopener noreferrer" title="Documentación Figma" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/figma.svg" alt="Logo de Figma" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://help.figma.com/hc/en-us" target="_blank" rel="noopener noreferrer"
+                            title="Documentación Figma"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/figma.svg" alt="Logo de Figma"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
 
                     <!-- Canva -->
                     <div class="glow-card rounded-xl">
-                        <a href="https://www.canva.com/help/" target="_blank" rel="noopener noreferrer" title="Documentación Canva" class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
-                            <img src="Imagenes/tech/canva.svg" alt="Logo de Canva" class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110" loading="lazy">
+                        <a href="https://www.canva.com/help/" target="_blank" rel="noopener noreferrer"
+                            title="Documentación Canva"
+                            class="relative bg-white rounded-xl p-6 sm:p-8 flex items-center justify-center w-full h-full aspect-square">
+                            <img src="Imagenes/tech/canva.svg" alt="Logo de Canva"
+                                class="max-h-16 sm:max-h-20 transition-transform duration-300 hover:scale-110"
+                                loading="lazy">
                         </a>
                     </div>
                 </div>
@@ -418,15 +681,17 @@
         <!-- Projects Section -->
         <section id="proyectos" class="my-24 reveal">
             <h2 class="text-3xl md:text-5xl font-archivo-black text-center mb-4">Proyectos Destacados</h2>
-            <p class="text-center text-gray-400 mb-16 max-w-2xl mx-auto">Una selección de mis trabajos más recientes en desarrollo web y frontend</p>
-            
+            <p class="text-center text-gray-400 mb-16 max-w-2xl mx-auto">Una selección de mis trabajos más recientes en
+                desarrollo web y frontend</p>
+
             <!-- Projects Grid -->
             <div class="projects-grid-container max-w-7xl mx-auto">
 
                 <!-- Proyecto: Dazenty -->
                 <article class="project-card-modern group" data-project="dazenty">
                     <div class="project-image-container">
-                        <img src="Imagenes/proyectos/dazenty.webp" alt="Dazenty Website" loading="lazy" class="project-img-modern"/>
+                        <img src="Imagenes/proyectos/dazenty.webp" alt="Dazenty Website" loading="lazy"
+                            class="project-img-modern" />
                         <div class="project-overlay-modern">
                             <button class="view-project-btn" data-project="dazenty">Ver Proyecto</button>
                         </div>
@@ -435,16 +700,38 @@
                         <div class="project-tags">
                             <span class="project-tag">Next.js</span>
                             <span class="project-tag">React</span>
+                            <span class="project-tag">n8n</span>
                         </div>
                         <h3 class="project-title-modern">Dazenty</h3>
-                        <p class="project-description-modern">Web corporativa para agencia de desarrollo. Next.js, React y Vercel.</p>
+                        <p class="project-description-modern">Agencia de diseño, desarrollo web y automatizaciones con n8n. Next.js, React y Vercel.</p>
+                    </div>
+                </article>
+
+                <!-- Proyecto: Andalcar -->
+                <article class="project-card-modern group" data-project="andalcar">
+                    <div class="project-image-container">
+                        <img src="Imagenes/proyectos/web_andalcar.webp" alt="Andalcar Alquiler de Coches" loading="lazy"
+                            class="project-img-modern" />
+                        <div class="project-overlay-modern">
+                            <button class="view-project-btn" data-project="andalcar">Ver Proyecto</button>
+                        </div>
+                    </div>
+                    <div class="project-content-modern">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">Tailwind</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title-modern">Andalcar</h3>
+                        <p class="project-description-modern">Plataforma de reservas de alquiler de vehículos en Conil y aeropuertos de Andalucía.</p>
                     </div>
                 </article>
 
                 <!-- Proyecto: Jandula -->
                 <article class="project-card-modern group" data-project="jandula">
                     <div class="project-image-container">
-                        <img src="Imagenes/proyectos/newweb-jandula.webp" alt="Jándula Moda Utrera" loading="lazy" class="project-img-modern"/>
+                        <img src="Imagenes/proyectos/newweb-jandula.webp" alt="Jándula Moda Utrera" loading="lazy"
+                            class="project-img-modern" />
                         <div class="project-overlay-modern">
                             <button class="view-project-btn" data-project="jandula">Ver Proyecto</button>
                         </div>
@@ -455,14 +742,16 @@
                             <span class="project-tag">React</span>
                         </div>
                         <h3 class="project-title-modern">Jándula Moda</h3>
-                        <p class="project-description-modern">Tienda de moda en Utrera con catálogo de colecciones. Next.js y React.</p>
+                        <p class="project-description-modern">Tienda de moda en Utrera con catálogo de colecciones.
+                            Next.js y React.</p>
                     </div>
                 </article>
 
                 <!-- Proyecto: Jocars -->
                 <article class="project-card-modern group" data-project="jocars">
                     <div class="project-image-container">
-                        <img src="Imagenes/proyectos/web_jcautos.webp" alt="JoCar Automóviles" loading="lazy" class="project-img-modern"/>
+                        <img src="Imagenes/proyectos/web_jcautos.webp" alt="JoCar Automóviles" loading="lazy"
+                            class="project-img-modern" />
                         <div class="project-overlay-modern">
                             <button class="view-project-btn" data-project="jocars">Ver Proyecto</button>
                         </div>
@@ -474,7 +763,8 @@
                             <span class="project-tag">JavaScript</span>
                         </div>
                         <h3 class="project-title-modern">JoCar Automóviles</h3>
-                        <p class="project-description-modern">Web para concesionario de vehículos premium de ocasión con catálogo interactivo y filtros. HTML5, CSS3 y JS.</p>
+                        <p class="project-description-modern">Web para concesionario de vehículos premium de ocasión con
+                            catálogo interactivo y filtros. HTML5, CSS3 y JS.</p>
                     </div>
                 </article>
 
@@ -482,37 +772,42 @@
 
             <!-- Ver más proyectos -->
             <div class="text-center mt-16">
-                <a href="pages/proyectos.html" class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-full hover:shadow-2xl hover:shadow-orange-500/30 transition-all duration-300 hover:scale-105">
+                <a href="pages/proyectos.html"
+                    class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-full hover:shadow-2xl hover:shadow-orange-500/30 transition-all duration-300 hover:scale-105">
                     <span>Ver Todos los Proyectos</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                 </a>
             </div>
         </section>
-        
+
         <!-- Modal de Proyecto -->
         <div id="project-modal" class="project-modal">
             <div class="project-modal-overlay"></div>
             <div class="project-modal-content">
                 <button class="project-modal-close" aria-label="Cerrar modal">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
-                
+
                 <div class="project-modal-body">
                     <div class="project-modal-image">
                         <img id="modal-project-image" src="" alt="Proyecto">
                     </div>
-                    
+
                     <div class="project-modal-info">
                         <div class="project-modal-tags" id="modal-project-tags"></div>
                         <h3 class="project-modal-title" id="modal-project-title"></h3>
                         <p class="project-modal-description" id="modal-project-description"></p>
-                        
+
                         <div class="project-modal-details" id="modal-project-details"></div>
-                        
+
                         <div class="project-modal-footer" id="modal-project-footer"></div>
                     </div>
                 </div>
@@ -532,28 +827,36 @@
     <!-- TICKER / CARRUSEL -->
     <div class="footer-ticker" aria-hidden="true">
         <div class="footer-ticker-track">
-            <span class="footer-ticker-item">Frontend Development</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Full Stack Development</span><span class="ticker-sep">—</span>
             <span class="footer-ticker-item">React</span><span class="ticker-sep">—</span>
-            <span class="footer-ticker-item">Next.js</span><span class="ticker-sep">—</span>
             <span class="footer-ticker-item">TypeScript</span><span class="ticker-sep">—</span>
-            <span class="footer-ticker-item">Tailwind CSS</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Next.js</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Vue.js</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Angular</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Node.js</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">PHP</span><span class="ticker-sep">—</span>
             <span class="footer-ticker-item">Supabase</span><span class="ticker-sep">—</span>
-            <span class="footer-ticker-item">Sanity CMS</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Tailwind CSS</span><span class="ticker-sep">—</span>
             <span class="footer-ticker-item">Vercel</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Docker</span><span class="ticker-sep">—</span>
             <span class="footer-ticker-item">Git</span><span class="ticker-sep">—</span>
-            <span class="footer-ticker-item">JavaScript</span><span class="ticker-sep">—</span>
-            <span class="footer-ticker-item">UI/UX</span><span class="ticker-sep">—</span>
-            <span class="footer-ticker-item">Frontend Development</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">n8n</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Claude Code</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Full Stack Development</span><span class="ticker-sep">—</span>
             <span class="footer-ticker-item">React</span><span class="ticker-sep">—</span>
-            <span class="footer-ticker-item">Next.js</span><span class="ticker-sep">—</span>
             <span class="footer-ticker-item">TypeScript</span><span class="ticker-sep">—</span>
-            <span class="footer-ticker-item">Tailwind CSS</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Next.js</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Vue.js</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Angular</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Node.js</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">PHP</span><span class="ticker-sep">—</span>
             <span class="footer-ticker-item">Supabase</span><span class="ticker-sep">—</span>
-            <span class="footer-ticker-item">Sanity CMS</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Tailwind CSS</span><span class="ticker-sep">—</span>
             <span class="footer-ticker-item">Vercel</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Docker</span><span class="ticker-sep">—</span>
             <span class="footer-ticker-item">Git</span><span class="ticker-sep">—</span>
-            <span class="footer-ticker-item">JavaScript</span><span class="ticker-sep">—</span>
-            <span class="footer-ticker-item">UI/UX</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">n8n</span><span class="ticker-sep">—</span>
+            <span class="footer-ticker-item">Claude Code</span><span class="ticker-sep">—</span>
         </div>
     </div>
 
@@ -562,15 +865,19 @@
             <div class="footer-bar-col">
                 <span class="footer-bar-label">Email</span>
                 <div class="footer-bar-email-wrap">
-                    <a href="mailto:alejandrohernandemurga@gmail.com" class="footer-bar-email">alejandrohernandemurga@gmail.com</a>
-                    <button class="footer-bar-copy" data-copy="alejandrohernandemurga@gmail.com" aria-label="Copiar email">Copiar</button>
+                    <a href="mailto:alejandrohernandemurga@gmail.com"
+                        class="footer-bar-email">alejandrohernandemurga@gmail.com</a>
+                    <button class="footer-bar-copy" data-copy="alejandrohernandemurga@gmail.com"
+                        aria-label="Copiar email">Copiar</button>
                 </div>
             </div>
             <div class="footer-bar-col">
                 <span class="footer-bar-label">Redes</span>
-                <a href="https://www.instagram.com/ale_h.m/" target="_blank" rel="noopener" class="footer-bar-link">Instagram ↗</a>
+                <a href="https://www.instagram.com/ale_h.m/" target="_blank" rel="noopener"
+                    class="footer-bar-link">Instagram ↗</a>
                 <a href="https://github.com/ELMURGA" target="_blank" rel="noopener" class="footer-bar-link">GitHub ↗</a>
-                <a href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-murga" target="_blank" rel="noopener" class="footer-bar-link">LinkedIn ↗</a>
+                <a href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-murga" target="_blank" rel="noopener"
+                    class="footer-bar-link">LinkedIn ↗</a>
             </div>
             <div class="footer-bar-col">
                 <span class="footer-bar-label">Teléfono</span>
@@ -602,5 +909,5 @@
     <script src="js/script-common.js?v=20260414" defer></script>
     <script src="js/script-index.js?v=20260414" defer></script>
 </body>
-</html>
 
+</html>
