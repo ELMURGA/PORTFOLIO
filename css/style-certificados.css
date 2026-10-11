@@ -214,11 +214,6 @@
     transform: translateX(4px);
 }
 
-/* FIX: Eliminados bloques duplicados de style-common.css:
-   .footer-socials, .social-link, .social-icon-svg, .social-text,
-   .site-footer, .contact-copyright, .scroll-to-top-btn, .scroll-to-top-btn.show,
-   @keyframes fadeInUp, .certificate-card animation (ahora controlado por IntersectionObserver) */
-
 /* Responsive */
 @media (max-width: 768px) {
     .certificates-grid {

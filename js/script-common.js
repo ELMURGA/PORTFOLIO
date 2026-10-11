@@ -3,184 +3,118 @@
    ================================ */
 
 document.addEventListener('DOMContentLoaded', function () {
-    
+
+    const root = document.documentElement;
+
     // ================================
-    // HEADER TRANSPARENTE Y REDUCIDO AL HACER SCROLL
+    // ENLACE ACTIVO SEGÚN LA SECCIÓN VISIBLE (solo enlaces internos "#...")
+    // ================================
+    const spyLinks = document.querySelectorAll('.site-header__link[href^="#"], .mobile-menu__link[href^="#"]');
+    const spySections = [...new Set([...spyLinks].map(l => l.getAttribute('href')))]
+        .filter(href => href.length > 1)
+        .map(href => document.querySelector(href))
+        .filter(Boolean);
+
+    function updateActiveLink() {
+        if (!spySections.length) return;
+        const marker = window.innerHeight * 0.35;
+        let currentHref = '#';
+        spySections.forEach(section => {
+            if (section.getBoundingClientRect().top <= marker) currentHref = '#' + section.id;
+        });
+        spyLinks.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === currentHref));
+    }
+
+    // ================================
+    // HEADER: se oculta al bajar y reaparece al subir.
+    // Solo usa clases que animan transform/colores (sin cambiar alturas),
+    // por eso no provoca saltos ni "rebotes" en el scroll.
     // ================================
     const header = document.getElementById('main-header');
-    let lastScroll = 0;
-
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-        
-        if (currentScroll > 100) {
-            header.classList.add('scrolled');
-            
-            // Si hacemos scroll hacia abajo, reducir el header
-            if (currentScroll > lastScroll && currentScroll > 150) {
-                header.classList.add('shrink');
-            } 
-            // Si hacemos scroll hacia arriba, restaurar el header
-            else if (currentScroll < lastScroll) {
-                header.classList.remove('shrink');
-            }
-        } else {
-            header.classList.remove('scrolled');
-            header.classList.remove('shrink');
-        }
-        
-        lastScroll = currentScroll;
-    });
-
-    // ================================
-    // BOTÓN VOLVER ARRIBA
-    // ================================
     const scrollToTopBtn = document.getElementById('scroll-to-top');
-    
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-            scrollToTopBtn.classList.add('visible');
-        } else {
-            scrollToTopBtn.classList.remove('visible');
-        }
-    });
+    let lastScroll = window.scrollY;
+    let ticking = false;
 
-    scrollToTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    function onScroll() {
+        const current = window.scrollY;
+
+        if (header) {
+            header.classList.toggle('is-scrolled', current > 20);
+
+            if (root.classList.contains('no-scroll') || current < 200) {
+                header.classList.remove('is-hidden');
+            } else if (Math.abs(current - lastScroll) > 6) {
+                header.classList.toggle('is-hidden', current > lastScroll);
+            }
+        }
+
+        if (scrollToTopBtn) {
+            scrollToTopBtn.classList.toggle('visible', current > 300);
+        }
+
+        updateActiveLink();
+        lastScroll = current;
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(onScroll);
+        }
+    }, { passive: true });
+    onScroll();
+
+    if (scrollToTopBtn) {
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-    });
-    
+    }
+
     // ================================
-    // MENÚ MÓVIL — FIX: null checks para páginas sin #mobile-menu
+    // MENÚ MÓVIL
     // ================================
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-    let _menuScrollY = 0;
-    
+
+    function setMenu(open) {
+        mobileMenu.classList.toggle('is-open', open);
+        mobileMenu.setAttribute('aria-hidden', String(!open));
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+        root.classList.toggle('no-scroll', open);
+        if (header) header.classList.remove('is-hidden');
+    }
+
     if (menuBtn && mobileMenu) {
-        function openMenu() {
-            mobileMenu.classList.remove('hidden');
-            _menuScrollY = window.scrollY;
-            document.body.style.position = 'fixed';
-            document.body.style.top = '-' + _menuScrollY + 'px';
-            document.body.style.width = '100%';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeMenu() {
-            mobileMenu.classList.add('hidden');
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.width = '';
-            document.body.style.overflow = '';
-            window.scrollTo(0, _menuScrollY);
-        }
-
         menuBtn.addEventListener('click', () => {
-            if (mobileMenu.classList.contains('hidden')) {
-                openMenu();
-            } else {
-                closeMenu();
-            }
+            setMenu(!mobileMenu.classList.contains('is-open'));
         });
-        
-        // Cerrar menú cuando se hace clic en un enlace
+
         mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                closeMenu();
-            });
+            link.addEventListener('click', () => setMenu(false));
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+                setMenu(false);
+            }
         });
     }
 
     // ================================
     // ANIMACIÓN FADE-IN AL HACER SCROLL
     // ================================
-    const revealElements = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
             }
         });
-    }, {
-        threshold: 0.1
-    });
+    }, { threshold: 0.1 });
 
-    revealElements.forEach(elem => {
-        observer.observe(elem);
-    });
-
-    // ================================
-    // LOGO: SCROLL SUAVE AL INICIO (solo en página actual con #)
-    // ================================
-    const logoLink = document.querySelector('.logo a');
-    if (logoLink) {
-        logoLink.addEventListener('click', (e) => {
-            const href = logoLink.getAttribute('href');
-            
-            // Solo prevenir y hacer scroll si el enlace es "#" (misma página)
-            if (href === '#') {
-                e.preventDefault();
-
-                // Aplica animación suave al logo
-                const img = logoLink.querySelector('img');
-                if (img) {
-                    img.classList.remove('logo-tap');
-                    void img.offsetWidth; // Reinicia la animación
-                    img.classList.add('logo-tap');
-                }
-
-                // Scroll suave al inicio
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-                
-                // Pequeña corrección opcional al terminar
-                setTimeout(() => {
-                    const y = Math.max(window.pageYOffset - 8, 0);
-                    if (y !== window.pageYOffset) {
-                        window.scrollTo({ top: y, behavior: 'instant' });
-                    }
-                }, 380);
-            }
-            // Si el href es otra URL (../index.html), dejar que navegue normalmente
-        });
-    }
-
-    // ================================
-    // ENLACES DE NAVEGACIÓN CON SCROLL SUAVE
-    // Solo para enlaces internos con #
-    // ================================
-    const navTargets = [
-        { linkSelector: 'a[href="#que-hago"]', sectionSelector: '#que-hago', titleSelector: '#que-hago h2' },
-        { linkSelector: 'a[href="#formacion"]', sectionSelector: '#formacion', titleSelector: '#formacion h2' },
-        { linkSelector: 'a[href="#proyectos"]', sectionSelector: '#proyectos', titleSelector: '#proyectos h2' },
-    ];
-
-    navTargets.forEach(({ linkSelector, sectionSelector, titleSelector }) => {
-        document.querySelectorAll(linkSelector).forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const section = document.querySelector(sectionSelector);
-                const title = document.querySelector(titleSelector);
-                if (!section) return;
-
-                const header = document.querySelector('header');
-                const headerHeight = header ? header.offsetHeight : 0;
-                const y = section.getBoundingClientRect().top + window.pageYOffset - (headerHeight + 16);
-                window.scrollTo({ top: y, behavior: 'smooth' });
-
-                // Resalte sutil del h2 al llegar
-                setTimeout(() => {
-                    if (title) {
-                        title.classList.remove('section-pop');
-                        void title.offsetWidth;
-                        title.classList.add('section-pop');
-                    }
-                }, 500);
-            });
-        });
-    });
+    document.querySelectorAll('.reveal').forEach(elem => observer.observe(elem));
 
     // ================================
     // BOTÓN COPIAR EMAIL (Footer)
@@ -188,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.footer-bar-copy[data-copy]').forEach(function (btn) {
         btn.addEventListener('click', function () {
             navigator.clipboard.writeText(btn.dataset.copy).then(function () {
-                var original = btn.textContent;
+                const original = btn.textContent;
                 btn.textContent = '✓ Copiado';
                 btn.classList.add('copied');
                 setTimeout(function () {
