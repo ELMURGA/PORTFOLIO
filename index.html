@@ -25,7 +25,7 @@
     <link rel="apple-touch-icon" sizes="512x512" href="Imagenes/logo/favicon-512.png">
 
     <!-- Preload LCP image - CRITICAL -->
-    <link rel="preload" as="image" href="Imagenes/personal/mio.webp?v=20261009-final" fetchpriority="high" type="image/webp">
+    <link rel="preload" as="image" href="Imagenes/personal/mio.webp?v=20261011" fetchpriority="high" type="image/webp">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,22 +56,7 @@
             color: #fff
         }
 
-        header {
-            padding: 0.75rem 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 50;
-            background: rgba(0, 0, 0, .85);
-            backdrop-filter: blur(8px)
-        }
 
-        .logo img {
-            height: 3.5rem;
-            object-fit: contain
-        }
 
         main {
             max-width: 1280px;
@@ -113,9 +98,6 @@
         }
 
         @media(min-width:768px) {
-            .logo img {
-                height: 4.25rem
-            }
 
             .md\:w-1\/2 {
                 width: 50%
@@ -126,11 +108,6 @@
             }
         }
 
-        @media(min-width:1024px) {
-            .logo img {
-                height: 4.75rem
-            }
-        }
 
         .font-archivo-black {
             font-family: 'Archivo Black', Impact, sans-serif
@@ -159,8 +136,8 @@
     </noscript>
 
     <!-- Custom CSS Files -->
-    <link rel="stylesheet" href="css/style-common.css?v=20261009-final">
-    <link rel="stylesheet" href="css/style-index.css?v=20261009-final">
+    <link rel="stylesheet" href="css/style-common.css?v=20261011">
+    <link rel="stylesheet" href="css/style-index.css?v=20261011">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -185,65 +162,51 @@
 <body class="bg-black text-white">
 
     <!-- HEADER -->
-    <header id="main-header"
-        class="py-3 px-6 md:px-8 flex justify-between items-center sticky top-0 z-50 bg-black bg-opacity-95 backdrop-blur-sm transition-all duration-300">
-        <div class="logo">
-            <a href="#">
-                <img src="Imagenes/logo/logo.webp" alt="Logo Alejandro Hernández Murga"
-                    class="h-14 md:h-16 lg:h-20 object-contain">
+    <header id="main-header" class="site-header">
+        <div class="site-header__bar">
+            <a href="#" class="site-header__logo" aria-label="Ir al inicio">
+                <img src="Imagenes/logo/logo.webp" alt="Logo Alejandro Hernández Murga" width="203" height="100">
             </a>
-        </div>
-        <nav class="hidden md:flex items-center space-x-8">
-            <a href="#" class="hover:text-gray-300 transition-colors">Inicio</a>
-            <a href="#servicios" class="hover:text-gray-300 transition-colors">Servicios</a>
-            <a href="#formacion" class="hover:text-gray-300 transition-colors">Formación</a>
-            <a href="#proyectos" class="hover:text-gray-300 transition-colors">Proyectos</a>
-            <a href="pages/certificados.html" class="hover:text-gray-300 transition-colors">Certificados</a>
-        </nav>
-        <div class="hidden md:flex">
-            <a href="pages/contacto.html"
-                class="cta-contact bg-white text-black font-bold py-3 px-6 rounded-full flex items-center space-x-2 hover:bg-gray-200 transition-colors">
-                <!-- Lightbulb SVG Icon -->
-                <svg class="w-5 h-5" viewBox="0 0 352 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                    <path
-                        d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z">
-                    </path>
-                </svg>
-                <span>CUÉNTAME TU IDEA</span>
+            <nav class="site-header__nav" aria-label="Navegación principal">
+                <a href="#" class="site-header__link">Inicio</a>
+                <a href="#servicios" class="site-header__link">Servicios</a>
+                <a href="#formacion" class="site-header__link">Formación</a>
+                <a href="#proyectos" class="site-header__link">Proyectos</a>
+                <a href="pages/certificados.html" class="site-header__link">Certificados</a>
+            </nav>
+            <a href="pages/contacto.html" class="site-header__cta">
+                <span class="site-header__cta-dot" aria-hidden="true"></span>
+                Cuéntame tu idea
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
             </a>
-        </div>
-        <div class="md:hidden">
-            <button id="menu-btn" class="text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                    </path>
-                </svg>
+            <button id="menu-btn" class="site-header__burger" type="button" aria-label="Abrir menú"
+                aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
             </button>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu"
-        class="hidden md:hidden bg-black fixed top-0 left-0 w-full h-full z-40 flex flex-col items-center justify-center space-y-8">
-        <a href="#" class="text-2xl hover:text-gray-300">Inicio</a>
-        <a href="#servicios" class="text-2xl hover:text-gray-300">Servicios</a>
-        <a href="#formacion" class="text-2xl hover:text-gray-300">Formación</a>
-        <a href="#proyectos" class="text-2xl hover:text-gray-300">Proyectos</a>
-        <a href="pages/contacto.html"
-            class="cta-contact mt-4 bg-white text-black font-bold py-3 px-6 rounded-full flex items-center space-x-2">
-            <span>CUÉNTAME TU IDEA</span>
-        </a>
+    <!-- MENÚ MÓVIL -->
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <nav class="mobile-menu__nav" aria-label="Navegación móvil">
+            <a href="#" class="mobile-menu__link"><span class="mobile-menu__num">01</span>Inicio</a>
+            <a href="#servicios" class="mobile-menu__link"><span class="mobile-menu__num">02</span>Servicios</a>
+            <a href="#formacion" class="mobile-menu__link"><span class="mobile-menu__num">03</span>Formación</a>
+            <a href="#proyectos" class="mobile-menu__link"><span class="mobile-menu__num">04</span>Proyectos</a>
+            <a href="pages/certificados.html" class="mobile-menu__link"><span class="mobile-menu__num">05</span>Certificados</a>
+        </nav>
+        <a href="pages/contacto.html" class="mobile-menu__cta">Cuéntame tu idea <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
     </div>
 
-    <!-- MAIN CONTENT -->
+<!-- MAIN CONTENT -->
     <main class="container mx-auto px-6 pt-2 md:pt-4 pb-12">
 
         <!-- Hero Section -->
         <section class="hero-section flex flex-col md:flex-row items-center justify-between gap-8 md:gap-14 reveal">
             <div class="w-full md:w-5/12 lg:w-5/12 flex justify-center md:justify-start">
                 <div class="hero-image-wrapper">
-                    <img src="Imagenes/personal/mio.webp?v=20261009-final" alt="Alejandro Hernández Murga — Full Stack Developer"
+                    <img src="Imagenes/personal/mio.webp?v=20261011" alt="Alejandro Hernández Murga — Full Stack Developer"
                         class="w-full h-auto object-cover rounded-2xl" width="2120" height="2775" fetchpriority="high">
                 </div>
             </div>
@@ -343,7 +306,7 @@
                             class="mx-auto" loading="lazy"></div>
                     <div class="swiper-slide"><img src="Imagenes/clientes/costasol.webp" alt="Logo Cliente 3"
                             class="mx-auto" loading="lazy" width="1536" height="1024"></div>
-                    <div class="swiper-slide"><img src="Imagenes/clientes/PAGINA WEB BLANCO.svg" alt="Logo Cliente 4"
+                    <div class="swiper-slide"><img src="Imagenes/clientes/pagina-web-blanco.svg" alt="Logo Cliente 4"
                             class="mx-auto" loading="lazy"></div>
                     <div class="swiper-slide"><img src="Imagenes/clientes/celerity.webp" alt="Logo Cliente 5"
                             class="mx-auto" loading="lazy" width="1024" height="1024"></div>
@@ -492,9 +455,6 @@
 
         <!-- Services Section -->
         <section id="servicios" class="my-24 reveal">
-            <!-- Anchor de compatibilidad para enlaces antiguos -->
-            <div id="que-hago"></div>
-
             <h2 class="text-4xl md:text-5xl font-archivo-black text-center mb-16">Desarrollo que convierte ideas en productos digitales reales.</h2>
             
             <div class="space-y-12">
@@ -798,7 +758,7 @@
 
                 <div class="project-modal-body">
                     <div class="project-modal-image">
-                        <img id="modal-project-image" src="" alt="Proyecto">
+                        <img id="modal-project-image" alt="Proyecto">
                     </div>
 
                     <div class="project-modal-info">
@@ -906,8 +866,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
     <!-- Custom JavaScript Files -->
-    <script src="js/script-common.js?v=20261009-final" defer></script>
-    <script src="js/script-index.js?v=20261009-final" defer></script>
+    <script src="js/script-common.js?v=20261011" defer></script>
+    <script src="js/script-index.js?v=20261011" defer></script>
 </body>
 
 </html>

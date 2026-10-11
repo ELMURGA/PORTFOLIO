@@ -93,7 +93,6 @@ PORTFOLIO/
 ├── 📄 index.html                    # Landing page principal
 ├── 📄 vercel.json                   # Configuración y cabeceras de despliegue en Vercel
 ├── 📄 README.md                     # Documentación profesional del proyecto
-├── 📄 GUIA_FORMULARIO.md            # Guía técnica de integración con Formspree
 │
 ├── 📁 pages/                        # Páginas secundarias del portfolio
 │   ├── contacto.html                # Formulario de contacto y datos directos

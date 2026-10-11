@@ -3,8 +3,6 @@
    ================================ */
 
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('✅ script-index.js cargado correctamente');
-    
     // ================================
     // DATOS DE LOS PROYECTOS
     // ================================
@@ -153,7 +151,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         'sevillatp': {
             title: 'Sevilla Tarjetas Plásticas - Sitio Web Corporativo',
-            category: 'web',
             image: 'Imagenes/proyectos/web_sevillatp.webp',
             isWeb: true,
             tags: ['HTML5', 'CSS3', 'JavaScript', 'E-commerce'],
@@ -211,7 +208,6 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         'pinturasmerpa': {
             title: 'Pinturas Merpa - Sitio Web Corporativo',
-            category: 'web',
             image: 'Imagenes/proyectos/web_pinturasmerpa.webp',
             isWeb: true,
             tags: ['HTML5', 'CSS3', 'JavaScript', 'En Desarrollo'],
@@ -458,35 +454,22 @@ document.addEventListener('DOMContentLoaded', function () {
     // MODAL DE PROYECTOS
     // ================================
     const modal = document.getElementById('project-modal');
-    if (!modal) {
-        console.warn('⚠️ Modal no encontrado en esta página');
-        return; // Si no hay modal, salir
-    }
-    console.log('✅ Modal encontrado, inicializando...');
-    
+    if (!modal) return;
+
     const modalOverlay = modal.querySelector('.project-modal-overlay');
     const modalClose = modal.querySelector('.project-modal-close');
     const viewProjectBtns = document.querySelectorAll('.view-project-btn');
-    let _modalScrollY = 0;
 
-    // Detectar si estamos en la página de proyectos
-    const isProyectosPage = window.location.pathname.includes('proyectos.html');
-    const imagePrefix = isProyectosPage ? '../' : '';
-    console.log('📍 Pathname:', window.location.pathname);
-    console.log('📍 isProyectosPage:', isProyectosPage);
-    console.log('📍 imagePrefix:', imagePrefix);
+    // Las rutas de projectsData son relativas a la raíz. En /pages/* hay que subir un nivel.
+    // OJO: en Vercel (cleanUrls) la URL es /pages/proyectos, sin ".html", así que
+    // se comprueba la carpeta /pages/ y no el nombre del archivo.
+    const isSubpage = /\/pages\//.test(window.location.pathname);
+    const imagePrefix = isSubpage ? '../' : '';
 
     // Función para abrir modal
     function openModal(projectId) {
         const project = projectsData[projectId];
-        if (!project) {
-            console.error('❌ Proyecto no encontrado:', projectId);
-            return;
-        }
-        
-        console.log('📦 Proyecto encontrado:', project.title);
-        console.log('🖼️ Ruta de imagen:', project.image);
-        console.log('🔗 Ruta final:', imagePrefix + project.image);
+        if (!project) return;
 
         // Rellenar contenido del modal con ruta ajustada
         document.getElementById('modal-project-title').textContent = project.title;
@@ -499,17 +482,9 @@ document.addEventListener('DOMContentLoaded', function () {
             else { modalBody.classList.remove('is-web'); }
         }
 
-        // Manejar múltiples imágenes o una sola
-        const imageContainer = document.querySelector('.project-modal-image');
-        if (project.images && project.images.length > 1) {
-            // Múltiples imágenes - mostrarlas en vertical
-            imageContainer.innerHTML = project.images.map(img => 
-                `<img src="${imagePrefix}${img}" alt="${project.title}" style="width: 100%; margin-bottom: 1rem;">`
-            ).join('');
-        } else {
-            // Una sola imagen
-            imageContainer.innerHTML = `<img id="modal-project-image" src="${imagePrefix}${project.image}" alt="${project.title}">`;
-        }
+        const modalImage = document.getElementById('modal-project-image');
+        modalImage.src = imagePrefix + project.image;
+        modalImage.alt = project.title;
         
         document.getElementById('modal-project-details').innerHTML = project.details;
 
@@ -521,7 +496,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Botones de acción
         const actionsContainer = document.getElementById('modal-project-footer');
-        const contactoPath = isProyectosPage ? 'contacto.html' : 'pages/contacto.html';
+        const contactoPath = isSubpage ? 'contacto.html' : 'pages/contacto.html';
         
         if (project.hasWebsite) {
             actionsContainer.innerHTML = `
@@ -544,39 +519,24 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Mostrar modal
-        _modalScrollY = window.scrollY;
-        document.body.style.position = 'fixed';
-        document.body.style.top = '-' + _modalScrollY + 'px';
-        document.body.style.width = '100%';
-        document.body.style.overflow = 'hidden';
+        document.documentElement.classList.add('no-scroll');
         modal.classList.add('active');
     }
 
     // Función para cerrar modal
     function closeModal() {
         modal.classList.remove('active');
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.width = '';
-        document.body.style.overflow = '';
-        window.scrollTo(0, _modalScrollY);
+        document.documentElement.classList.remove('no-scroll');
     }
 
     // Event listeners para todos los botones de "Ver Proyecto"
-    if (viewProjectBtns.length > 0) {
-        console.log(`✅ Encontrados ${viewProjectBtns.length} botones de proyecto`);
-        viewProjectBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                e.preventDefault();
-                const projectId = btn.getAttribute('data-project');
-                console.log('🔄 Abriendo proyecto:', projectId);
-                openModal(projectId);
-            });
+    viewProjectBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            openModal(btn.getAttribute('data-project'));
         });
-    } else {
-        console.warn('⚠️ No se encontraron botones .view-project-btn');
-    }
+    });
 
     if (modalOverlay) modalOverlay.addEventListener('click', closeModal);
     if (modalClose) modalClose.addEventListener('click', closeModal);
@@ -593,7 +553,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // ================================
     const swiperElement = document.querySelector('.client-swiper');
     if (swiperElement && typeof Swiper !== 'undefined') {
-        const clientSwiper = new Swiper('.client-swiper', {
+        new Swiper('.client-swiper', {
             loop: true,
             slidesPerView: 2,
             spaceBetween: 20,
@@ -611,35 +571,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     spaceBetween: 50,
                 },
             },
-        });
-    }
-
-    // ================================
-    // SCROLL SUAVE A CONTACTO (SOLO INTERNO)
-    // ================================
-    const ctaButtons = document.querySelectorAll('a.cta-contact');
-    const contactSection = document.querySelector('#contacto');
-
-    if (ctaButtons.length > 0) {
-        ctaButtons.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                // Solo interceptar si el enlace apunta a #contacto (no a pages/contacto.html)
-                if (btn.getAttribute('href') !== 'pages/contacto.html' && contactSection) {
-                    e.preventDefault();
-
-                    // Añade animación de swing al botón clicado
-                    btn.classList.remove('swing-once');
-                    void btn.offsetWidth;
-                    btn.classList.add('swing-once');
-
-                    // Calcular posición teniendo en cuenta el header sticky
-                    const header = document.querySelector('header');
-                    const headerHeight = header ? header.offsetHeight : 0;
-                    const targetY = contactSection.getBoundingClientRect().top + window.pageYOffset - (headerHeight + 16);
-
-                    window.scrollTo({ top: targetY, behavior: 'smooth' });
-                }
-            });
         });
     }
 

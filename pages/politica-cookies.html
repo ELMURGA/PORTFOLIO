@@ -15,10 +15,6 @@
     <style>
         *{box-sizing:border-box;margin:0;padding:0}
         body{background:#000;color:#fff;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5}
-        header{padding:1.5rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:50;background:rgba(0,0,0,.95);backdrop-filter:blur(4px)}
-        .logo img{height:7rem;object-fit:contain}
-        @media(min-width:768px){.logo img{height:10rem}}
-        @media(min-width:1024px){.logo img{height:14rem}}
     </style>
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,7 +22,7 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;700&family=Inter:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;700&family=Inter:wght@400;700&display=swap"></noscript>
     
-    <link rel="stylesheet" href="../css/style-common.css?v=20260414">
+    <link rel="stylesheet" href="../css/style-common.css?v=20261011">
     
     <!-- SEO Canonical URL -->
     <link rel="canonical" href="https://alejandro-murga.vercel.app/pages/politica-cookies">
@@ -39,26 +35,45 @@
 </head>
 <body class="bg-black text-white">
 
-    <header id="main-header" class="p-6 md:p-8 flex justify-between items-center sticky top-0 z-50 bg-black bg-opacity-95 backdrop-blur-sm transition-all duration-300">
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../Imagenes/logo/logo.webp" alt="Logo Alejandro Hernández Murga" class="h-28 md:h-40 lg:h-56 object-contain"> 
+    <!-- HEADER -->
+    <header id="main-header" class="site-header">
+        <div class="site-header__bar">
+            <a href="../index.html" class="site-header__logo" aria-label="Ir al inicio">
+                <img src="../Imagenes/logo/logo.webp" alt="Logo Alejandro Hernández Murga" width="203" height="100">
             </a>
-        </div>
-        <nav class="hidden md:flex items-center space-x-8">
-            <a href="../index.html" class="hover:text-gray-300 transition-colors">Inicio</a>
-            <a href="../index.html#que-hago" class="hover:text-gray-300 transition-colors">¿Qué hago?</a>
-            <a href="../index.html#proyectos" class="hover:text-gray-300 transition-colors">Proyectos</a>
-            <a href="certificados.html" class="hover:text-gray-300 transition-colors">Certificados</a>
-        </nav>
-        <div class="hidden md:flex">
-            <a href="contacto.html" class="cta-contact bg-white text-black font-bold py-3 px-6 rounded-full flex items-center space-x-2 hover:bg-gray-200 transition-colors">
-                <span>CONTACTO</span>
+            <nav class="site-header__nav" aria-label="Navegación principal">
+                <a href="../index.html" class="site-header__link">Inicio</a>
+                <a href="../index.html#servicios" class="site-header__link">Servicios</a>
+                <a href="../index.html#formacion" class="site-header__link">Formación</a>
+                <a href="proyectos.html" class="site-header__link">Proyectos</a>
+                <a href="certificados.html" class="site-header__link">Certificados</a>
+            </nav>
+            <a href="contacto.html" class="site-header__cta">
+                <span class="site-header__cta-dot" aria-hidden="true"></span>
+                Cuéntame tu idea
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
             </a>
+            <button id="menu-btn" class="site-header__burger" type="button" aria-label="Abrir menú"
+                aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-16">
+    <!-- MENÚ MÓVIL -->
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <nav class="mobile-menu__nav" aria-label="Navegación móvil">
+            <a href="../index.html" class="mobile-menu__link"><span class="mobile-menu__num">01</span>Inicio</a>
+            <a href="../index.html#servicios" class="mobile-menu__link"><span class="mobile-menu__num">02</span>Servicios</a>
+            <a href="../index.html#formacion" class="mobile-menu__link"><span class="mobile-menu__num">03</span>Formación</a>
+            <a href="proyectos.html" class="mobile-menu__link"><span class="mobile-menu__num">04</span>Proyectos</a>
+            <a href="certificados.html" class="mobile-menu__link"><span class="mobile-menu__num">05</span>Certificados</a>
+        </nav>
+        <a href="contacto.html" class="mobile-menu__cta">Cuéntame tu idea <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    </div>
+
+<main class="max-w-4xl mx-auto px-6 py-16">
         <h1 class="text-4xl md:text-5xl font-archivo-black mb-12">Política de Cookies</h1>
         
         <section class="mb-10">
@@ -151,6 +166,6 @@
         </svg>
     </button>
 
-    <script src="../js/script-common.js?v=20260414" defer></script>
+    <script src="../js/script-common.js?v=20261011" defer></script>
 </body>
 </html>
